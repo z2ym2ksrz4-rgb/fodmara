@@ -4,6 +4,7 @@ import { Sheet, haptics, toLocalInput, fromLocalInput } from "@/core/ui";
 import { getStool, updateStool, deleteStool, type Stool } from "../data";
 import { BristolPicker } from "../components/Bristol";
 import { useUi } from "../store";
+import { removeHealthSamples } from "../health";
 
 /**
  * A toilet visit in one tap: the Bristol type (picked first, closes nothing), urgency, "not quite done", blood.
@@ -49,7 +50,7 @@ export function StoolSheet() {
       </label>
       <div className="row between" style={{ marginTop: 14 }}>
         {confirmDelete
-          ? <button type="button" className="ghost danger" onClick={async () => { await deleteStool(s.id); bump(); openStool(null); }}>{t("stool.deleteConfirm")}</button>
+          ? <button type="button" className="ghost danger" onClick={async () => { void removeHealthSamples(s.healthUuid); await deleteStool(s.id); bump(); openStool(null); }}>{t("stool.deleteConfirm")}</button>
           : <button type="button" className="linklike" onClick={() => setConfirmDelete(true)}>{t("common.delete")}</button>}
         <button type="button" onClick={() => void close()}>{t("common.done")}</button>
       </div>

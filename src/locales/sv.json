@@ -326,7 +326,8 @@
       "onboarding": "",
       "settings": "",
       "cycle": "Menscykelspårning ingår i Pro.",
-      "reintro": "Återintroduktionsplanen ingår i Pro."
+      "reintro": "Återintroduktionsplanen ingår i Pro.",
+      "health": "Export till Apple Hälsa ingår i Pro."
     }
   },
   "onboarding": {
@@ -558,7 +559,12 @@
     "notePh": "Restaurang, portionsstorlek, tillagning…",
     "hint": "Bara vad du åt – mängden bestämmer du. Grupperna är typiskt innehåll, inte en bedömning.",
     "deleteConfirm": "Radera denna måltid?",
-    "empty": "inga livsmedel tillagda"
+    "empty": "inga livsmedel tillagda",
+    "photo": "Foto",
+    "photoTake": "Ta foto",
+    "photoPick": "Välj foto",
+    "photoRemove": "Ta bort foto",
+    "photoHint": "Stannar i den här telefonen – inte i säkerhetskopian eller PDF:en."
   },
   "stool": {
     "title": "Toalettbesök",
@@ -858,5 +864,25 @@
     "history": "Alla tester",
     "stoppedEarly": "avbrutet tidigt",
     "disclaimer": "Fodmara registrerar dina tester – den säger inte vad du ska äta. Prata med din dietist innan du ändrar din kost."
+  },
+  "health": {
+    "title": "Apple Hälsa",
+    "hint": "Skriv skov och toalettbesök till Apple Hälsa som symtomposter (kramper, uppblåsthet, diarré, förstoppning…).",
+    "on": "På · besvär skrivs till Hälsa",
+    "offToast": "Export till Apple Hälsa avstängd (befintliga poster finns kvar i Hälsa)",
+    "denied": "Åtkomst till Apple Hälsa gavs inte. Du kan ändra det i appen Hälsa under Delning.",
+    "synced": "{{n}} poster skrivna till Apple Hälsa"
+  },
+  "csv": {
+    "export": "Exportera allt som CSV",
+    "done": "CSV skapad",
+    "type": "Typ",
+    "date": "Datum",
+    "time": "Tid",
+    "value": "Värde",
+    "detail": "Detalj",
+    "note": "Anteckning",
+    "checkin": "Incheckning",
+    "until": "till"
   }
 }

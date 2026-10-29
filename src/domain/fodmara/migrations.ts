@@ -79,4 +79,15 @@ export const fodmaraMigrations: Migration[] = [
        );`,
     ],
   },
+  {
+    version: 25,
+    name: "fodmara_photo_and_health",
+    sql: [
+      // Meal photo: a file in the app's Data directory (meals/<id>.jpg), never in the JSON backup.
+      `ALTER TABLE meal ADD COLUMN photoPath TEXT;`,
+      // Apple Health mirror for toilet visits (diarrhoea / constipation samples), same idempotent scheme as episodes.
+      `ALTER TABLE stool ADD COLUMN healthUuid TEXT;`,
+      `ALTER TABLE stool ADD COLUMN healthSyncedAt TEXT;`,
+    ],
+  },
 ];

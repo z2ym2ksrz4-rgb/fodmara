@@ -326,7 +326,8 @@
       "onboarding": "",
       "settings": "",
       "cycle": "Die Zykluserfassung gehört zu Pro.",
-      "reintro": "Der Wiedereinführungsplan gehört zu Pro."
+      "reintro": "Der Wiedereinführungsplan gehört zu Pro.",
+      "health": "Der Export zu Apple Health gehört zu Pro."
     }
   },
   "onboarding": {
@@ -558,7 +559,12 @@
     "notePh": "Restaurant, Portionsgröße, Zubereitung…",
     "hint": "Nur was Sie gegessen haben – die Menge bestimmen Sie. Die Gruppen sind typische Inhalte, keine Bewertung.",
     "deleteConfirm": "Diese Mahlzeit löschen?",
-    "empty": "keine Lebensmittel hinzugefügt"
+    "empty": "keine Lebensmittel hinzugefügt",
+    "photo": "Foto",
+    "photoTake": "Foto aufnehmen",
+    "photoPick": "Foto auswählen",
+    "photoRemove": "Foto entfernen",
+    "photoHint": "Bleibt auf diesem Telefon – nicht in der Sicherungsdatei oder im PDF."
   },
   "stool": {
     "title": "Toilettengang",
@@ -858,5 +864,25 @@
     "history": "Alle Tests",
     "stoppedEarly": "vorzeitig beendet",
     "disclaimer": "Fodmara hält Ihre Tests fest – es sagt Ihnen nicht, was Sie essen sollen. Sprechen Sie mit Ihrer Ernährungsfachkraft, bevor Sie Ihre Ernährung ändern."
+  },
+  "health": {
+    "title": "Apple Health",
+    "hint": "Beschwerdephasen und Toilettengänge als Symptom-Einträge in Apple Health schreiben (Krämpfe, Blähbauch, Durchfall, Verstopfung…).",
+    "on": "An · Beschwerden werden in Health geschrieben",
+    "offToast": "Export zu Apple Health ausgeschaltet (vorhandene Einträge bleiben in Health)",
+    "denied": "Der Zugriff auf Apple Health wurde nicht gewährt. Sie können das in der Health-App unter Teilen ändern.",
+    "synced": "{{n}} Einträge in Apple Health geschrieben"
+  },
+  "csv": {
+    "export": "Alles als CSV exportieren",
+    "done": "CSV erstellt",
+    "type": "Typ",
+    "date": "Datum",
+    "time": "Uhrzeit",
+    "value": "Wert",
+    "detail": "Detail",
+    "note": "Notiz",
+    "checkin": "Eintrag",
+    "until": "bis"
   }
 }

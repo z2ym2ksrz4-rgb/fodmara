@@ -10,6 +10,7 @@ import { usePurchases, useProGate } from "@/core/purchases";
 import { maybeAskForReview } from "@/core/review";
 import { TagPicker } from "../components/TagPicker";
 import { useUi } from "../store";
+import { removeHealthSamples } from "../health";
 
 /**
  * The flare-up sheet ("my gut is acting up") in four tempos:
@@ -67,7 +68,7 @@ export function EpisodeSheet() {
     bump(); await load(); setStep(0); setMode("journey");
   };
   const onIntake = async (m: Medication) => { await logIntake(m.id, ep.id); haptics.tap(); setIntakes(await listIntakes(ep.id)); bump(); };
-  const onDelete = async () => { await deleteEpisode(ep.id); bump(); close(); };
+  const onDelete = async () => { void removeHealthSamples(ep.healthUuid); await deleteEpisode(ep.id); bump(); close(); };
   const dur = ep.endedAt ? hours(ep.startedAt, ep.endedAt) : null;
   const title = ep.endedAt ? t("episode.title") : t("episode.ongoing");
 

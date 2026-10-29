@@ -299,3 +299,5 @@ ul.plain li { margin:5px 0; line-height:1.45; }
 .tl-time { width:auto; min-width:44px; white-space:nowrap; font-size:.8rem; }
 /* five tabs: keep "Einstellungen"/"Inställningar" on one line at 360 px */
 .tabbar button { font-size:.7rem; letter-spacing:-.01em; padding:12px 1px 10px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0; }
+.meal-photo { display:flex; flex-direction:column; gap:8px; align-items:flex-start; }
+.meal-photo img { width:100%; max-height:220px; object-fit:cover; border-radius:var(--r-sm); }

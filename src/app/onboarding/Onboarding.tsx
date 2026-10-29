@@ -7,6 +7,7 @@ import i18n, { SUPPORTED, type Lang } from "@/core/i18n";
 import { haptics } from "@/core/ui";
 import { WidgetPreview } from "@/domain/fodmara/components/WidgetPreview";
 import { localDay } from "@/core/ui";
+import { healthAvailable } from "@/domain/fodmara/health";
 
 /**
  * Onboarding: (0) language + first name, (1-3) three short intro screens, widget intro, (setup) IBS type, diagnosis,
@@ -26,6 +27,7 @@ export function Onboarding() {
   const [phaseStart, setPhaseStart] = useState(localDay());
   const [flagsOpen, setFlagsOpen] = useState(false);
   const [wantCycle, setWantCycle] = useState(false);
+  const [wantHealth, setWantHealth] = useState(false);
   const intro = t("onboarding.steps", { returnObjects: true }) as { title: string; body: string }[];
   const total = intro.length + 4; // name, intro…, widget, setup, extras
   const SETUP = total - 2, EXTRAS = total - 1, WIDGET = intro.length + 1;
@@ -36,7 +38,7 @@ export function Onboarding() {
     const profile = { since: since ?? undefined, type: type ?? undefined, diagnosed: diagnosed ?? undefined };
     await settings.set("conditionProfile", since || type || diagnosed ? JSON.stringify(profile) : null);
     if (phase) { await settings.set("fodmapPhase", phase); if (phase === "elimination") await settings.set("phaseStart", phaseStart); }
-    await settings.set("onboardingWishes", wantCycle ? JSON.stringify({ cycle: true }) : null);
+    await settings.set("onboardingWishes", wantCycle || wantHealth ? JSON.stringify({ cycle: wantCycle, health: wantHealth }) : null);
     await ensurePermission();
     await settings.set("onboardingDone", true);
     showPaywall("onboarding");
@@ -121,6 +123,10 @@ export function Onboarding() {
         <p className="muted">{t("onboarding.extrasBody")}</p>
         <label className="check"><input type="checkbox" checked={wantCycle} onChange={(e) => setWantCycle(e.target.checked)} /> {t("settings.cycleTracking")} <span className="pill pro">PRO</span></label>
         <small className="muted" style={{ display: "block", marginTop: -4, marginBottom: 10 }}>{t("settings.cycleHint")}</small>
+        {healthAvailable() && (<>
+          <label className="check"><input type="checkbox" checked={wantHealth} onChange={(e) => setWantHealth(e.target.checked)} /> {t("health.title")} <span className="pill pro">PRO</span></label>
+          <small className="muted" style={{ display: "block", marginTop: -4, marginBottom: 10 }}>{t("health.hint")}</small>
+        </>)}
         <p className="muted small" style={{ marginTop: 12 }}>{t("onboarding.extrasNote")}</p>
         <div className="row" style={{ marginTop: 10 }}>
           <button className="cta" onClick={() => void finish()}>{t("onboarding.start")}</button>

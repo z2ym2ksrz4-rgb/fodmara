@@ -326,7 +326,8 @@
       "onboarding": "",
       "settings": "",
       "cycle": "Syklussporing er en del av Pro.",
-      "reintro": "Reintroduksjonsplanen er en del av Pro."
+      "reintro": "Reintroduksjonsplanen er en del av Pro.",
+      "health": "Eksport til Apple Helse er en del av Pro."
     }
   },
   "onboarding": {
@@ -558,7 +559,12 @@
     "notePh": "Restaurant, porsjonsstørrelse, tilberedning…",
     "hint": "Bare hva du spiste – mengden bestemmer du. Gruppene er typisk innhold, ikke en dom.",
     "deleteConfirm": "Slette dette måltidet?",
-    "empty": "ingen matvarer lagt til"
+    "empty": "ingen matvarer lagt til",
+    "photo": "Bilde",
+    "photoTake": "Ta bilde",
+    "photoPick": "Velg bilde",
+    "photoRemove": "Fjern bilde",
+    "photoHint": "Blir på denne telefonen – ikke i sikkerhetskopien eller PDF-en."
   },
   "stool": {
     "title": "Toalettbesøk",
@@ -858,5 +864,25 @@
     "history": "Alle tester",
     "stoppedEarly": "stoppet tidlig",
     "disclaimer": "Fodmara registrerer testene dine – den forteller deg ikke hva du skal spise. Snakk med ernæringsfysiologen din før du endrer kostholdet."
+  },
+  "health": {
+    "title": "Apple Helse",
+    "hint": "Skriv oppblussinger og toalettbesøk til Apple Helse som symptomoppføringer (kramper, oppblåsthet, diaré, forstoppelse…).",
+    "on": "På · plager skrives til Helse",
+    "offToast": "Eksport til Apple Helse slått av (eksisterende oppføringer blir i Helse)",
+    "denied": "Tilgang til Apple Helse ble ikke gitt. Du kan endre det i Helse-appen under Deling.",
+    "synced": "{{n}} oppføringer skrevet til Apple Helse"
+  },
+  "csv": {
+    "export": "Eksporter alt som CSV",
+    "done": "CSV opprettet",
+    "type": "Type",
+    "date": "Dato",
+    "time": "Tid",
+    "value": "Verdi",
+    "detail": "Detalj",
+    "note": "Notat",
+    "checkin": "Innsjekk",
+    "until": "til"
   }
 }

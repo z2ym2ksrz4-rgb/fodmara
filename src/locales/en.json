@@ -326,7 +326,8 @@
       "onboarding": "",
       "settings": "",
       "cycle": "Cycle tracking is part of Pro.",
-      "reintro": "The reintroduction planner is part of Pro."
+      "reintro": "The reintroduction planner is part of Pro.",
+      "health": "Apple Health export is part of Pro."
     }
   },
   "onboarding": {
@@ -558,7 +559,12 @@
     "notePh": "Restaurant, portion size, how it was cooked…",
     "hint": "Only what you ate – amounts are up to you. The groups are typical content, not a judgement.",
     "deleteConfirm": "Delete this meal?",
-    "empty": "no foods added"
+    "empty": "no foods added",
+    "photo": "Photo",
+    "photoTake": "Take photo",
+    "photoPick": "Choose photo",
+    "photoRemove": "Remove photo",
+    "photoHint": "Stays on this phone – not in the backup file or the PDF."
   },
   "stool": {
     "title": "Toilet visit",
@@ -858,5 +864,25 @@
     "history": "All tests",
     "stoppedEarly": "stopped early",
     "disclaimer": "Fodmara records your tests – it does not tell you what to eat. Talk to your dietitian before changing your diet."
+  },
+  "health": {
+    "title": "Apple Health",
+    "hint": "Write flare-ups and toilet visits to Apple Health as symptom entries (cramps, bloating, diarrhoea, constipation…).",
+    "on": "On · symptoms are written to Health",
+    "offToast": "Apple Health export turned off (existing entries stay in Health)",
+    "denied": "Apple Health access was not granted. You can change it in the Health app under Sharing.",
+    "synced": "{{n}} entries written to Apple Health"
+  },
+  "csv": {
+    "export": "Export everything as CSV",
+    "done": "CSV created",
+    "type": "Type",
+    "date": "Date",
+    "time": "Time",
+    "value": "Value",
+    "detail": "Detail",
+    "note": "Note",
+    "checkin": "Check-in",
+    "until": "until"
   }
 }

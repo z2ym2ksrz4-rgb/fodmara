@@ -3,7 +3,7 @@
 Run: python3 scripts/i18n/build.py"""
 import json, os, csv, re
 ROOT = os.path.join(os.path.dirname(__file__), "..", "..")
-DROP = {"loud": None, "weather": None, "medDays": None, "health": None, "diary": ["tags"],
+DROP = {"loud": None, "weather": None, "medDays": None, "diary": ["tags"],
         "diary.groups": ["sound"],
         "home": ["louderNow", "louderHint", "endSpike", "spikesMonth_one", "spikesMonth_other", "recent"],
         "home.fields": ["loudness", "distress", "noise"], "home.fieldHint": ["distress", "noise"],

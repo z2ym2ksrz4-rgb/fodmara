@@ -14,6 +14,7 @@ import { Spark } from "../components/Spark";
 import { PlateIcon, RollIcon } from "../components/Icons";
 import { publishWidget } from "../widget";
 import { applyOnboardingWishes } from "../wishes";
+import { syncHealth } from "../health";
 import { sideFields, statusFor } from "../config";
 import { TEST_DAYS, WASHOUT_DAYS } from "../fodmap";
 import {
@@ -63,13 +64,13 @@ export function Home() {
     const stools: Stool[] = await listStools(dayFrom, dayTo);
     const flares = await listEpisodes(dayFrom, dayTo);
     setItems([
-      ...meals.map((m) => ({ at: m.at, kind: "meal" as const, id: m.id, title: t("meal.title"), sub: m.items.map((i) => foodName(t, i)).join(", ") || t("meal.empty") })),
+      ...meals.map((m) => ({ at: m.at, kind: "meal" as const, id: m.id, title: t("meal.title"), sub: (m.items.map((i) => foodName(t, i)).join(", ") || t("meal.empty")) + (m.photoPath ? " · 📷" : "") })),
       ...stools.map((x) => ({ at: x.at, kind: "stool" as const, id: x.id, title: t("stool.title"), sub: [x.bristol ? t("stool.typeShort", { n: x.bristol }) : null, x.urgency ? t("stool.urgency") : null, x.blood ? t("stool.blood") : null].filter(Boolean).join(" · ") })),
       ...flares.map((e) => ({ at: e.startedAt, kind: "flare" as const, id: e.id, title: t("episode.title"), sub: e.endedAt ? t("episode.duration", { h: hours(e.startedAt, e.endedAt).toFixed(1) }) : t("home.ongoing") })),
     ].sort((a, b) => b.at.localeCompare(a.at)));
     setChallenge(await activeChallenge());
     void publishWidget({ open: !!o, today: typeof ex.gut === "number" ? ex.gut : null, avg7: tr.now, flares: nFlares, t, lang });
-    if (isPro) await applyOnboardingWishes();
+    if (isPro) { await applyOnboardingWishes(); void syncHealth(); }
   }, [day, t, lang, isPro]);
   useEffect(() => { void load(); }, [load, version]);
 

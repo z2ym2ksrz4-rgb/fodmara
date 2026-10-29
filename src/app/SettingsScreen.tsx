@@ -13,6 +13,8 @@ import { useUi } from "@/domain/fodmara/store";
 import { InfoSheets } from "@/domain/fodmara/screens/InfoSheets";
 import { MedicationsSheet } from "@/domain/fodmara/screens/Medications";
 import { FoodsSheet } from "@/domain/fodmara/screens/FoodsSheet";
+import { healthAvailable, requestHealthAccess, syncHealth, resetHealthSync } from "@/domain/fodmara/health";
+import { exportCsv } from "@/domain/fodmara/csv";
 import { localDay } from "@/core/ui";
 
 export function SettingsScreen() {
@@ -34,6 +36,7 @@ export function SettingsScreen() {
   const [importText, setImportText] = useState(""); const [importPass, setImportPass] = useState("");
   const [name, setName] = useState(s.userName ?? "");
   const [msg, setMsg] = useState<string | null>(null);
+  const [healthBusy, setHealthBusy] = useState(false);
   const toast = (m: string) => { setMsg(m); setTimeout(() => setMsg(null), 2500); };
 
   const savePin = async () => {
@@ -83,6 +86,23 @@ export function SettingsScreen() {
       )}
       <div className="card"><div><strong>{t("foods.title")}</strong><div className="muted small">{t("foods.settingsHint")}</div></div><button className="ghost" onClick={() => setFoodsOpen(true)}>{t("foods.open")}</button></div>
       <button type="button" className="linklike small" onClick={() => openInfo("fodmap")}>{t("foods.what")}</button>
+      {healthAvailable() && (
+        <div className="card" style={{ marginTop: 10 }}>
+          <div><strong>{t("health.title")} {!isPro && <span className="pill pro">PRO</span>}</strong><div className="muted small">{s.healthExport ? t("health.on") : t("health.hint")}</div></div>
+          {s.healthExport
+            ? <button className="ghost" onClick={async () => { await s.set("healthExport", false); await resetHealthSync(); toast(t("health.offToast")); }}>{t("common.off")}</button>
+            : <button className="ghost" disabled={healthBusy} onClick={async () => {
+                if (!gate.allow("health")) return;
+                setHealthBusy(true);
+                try {
+                  const ok = await requestHealthAccess();
+                  if (!ok) { toast(t("health.denied")); return; }
+                  await s.set("healthExport", true);
+                  const n = await syncHealth(); toast(t("health.synced", { n }));
+                } finally { setHealthBusy(false); }
+              }}>{t("common.on")}</button>}
+        </div>
+      )}
 
       <button type="button" className="card tap" style={{ width: "100%", textAlign: "left", marginTop: 10 }} onClick={() => openInfo("redFlags")}>
         <span>{t("redFlags.link")}</span><span className="muted">›</span>
@@ -115,6 +135,7 @@ export function SettingsScreen() {
       <div className="stack">
         <button className="ghost" onClick={() => { if (!gate.allow("backup")) return; const p = prompt(t("backup.passphrase")); if (p) void exportBackup(p).then(() => toast(t("backup.exported"))); }}>{t("backup.export")}</button>
         <button className="ghost" onClick={() => { if (gate.allow("backup")) setImportOpen(true); }}>{t("backup.import")}</button>
+        <button className="ghost" onClick={() => { if (gate.allow("backup")) void exportCsv(t, i.language).then(() => toast(t("csv.done"))); }}>{t("csv.export")}</button>
         <button className="ghost danger" onClick={async () => { if (!confirm(t("backup.wipeConfirm"))) return; await wipeAllData(); alert(t("backup.wiped")); location.reload(); }}>{t("backup.wipe")}</button>
       </div>
       <p className="muted small">{t("settings.dataNote")}</p>

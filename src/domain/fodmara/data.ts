@@ -28,7 +28,7 @@ export async function updateCustomFood(id: string, patch: { name?: string; group
 
 // ---- meals ------------------------------------------------------------------------------------------------------
 
-export type Meal = { id: string; at: string; note: string | null; createdAt: string; updatedAt: string };
+export type Meal = { id: string; at: string; note: string | null; photoPath: string | null; createdAt: string; updatedAt: string };
 /** One item on a plate: a catalogue key or a custom food (name/groups resolved for display). */
 export type MealItem = { id: string; mealId: string; foodKey: string | null; customFoodId: string | null; customName?: string | null; customGroups?: string | null };
 export type MealWithItems = Meal & { items: MealItem[] };
@@ -38,7 +38,7 @@ export async function createMeal(at = nowIso()): Promise<string> {
   await dbWrite(`INSERT INTO meal(id,at,note,createdAt,updatedAt) VALUES(?,?,NULL,?,?)`, [id, at, now, now]);
   return id;
 }
-export async function updateMeal(id: string, patch: { at?: string; note?: string | null }) {
+export async function updateMeal(id: string, patch: { at?: string; note?: string | null; photoPath?: string | null }) {
   const keys = Object.keys(patch) as (keyof typeof patch)[]; if (!keys.length) return;
   await dbWrite(`UPDATE meal SET ${keys.map((k) => `${k}=?`).join(", ")}, updatedAt=? WHERE id=?`, [...keys.map((k) => patch[k] ?? null), nowIso(), id]);
 }
@@ -84,7 +84,7 @@ export async function foodUsage(): Promise<Record<string, number>> {
 
 // ---- stools -----------------------------------------------------------------------------------------------------
 
-export type Stool = { id: string; at: string; bristol: number | null; urgency: number; incomplete: number; blood: number; note: string | null; updatedAt: string };
+export type Stool = { id: string; at: string; bristol: number | null; urgency: number; incomplete: number; blood: number; note: string | null; healthUuid: string | null; healthSyncedAt: string | null; updatedAt: string };
 export async function createStool(at = nowIso()): Promise<string> {
   const id = newId();
   await dbWrite(`INSERT INTO stool(id,at,bristol,urgency,incomplete,blood,note,updatedAt) VALUES(?,?,NULL,0,0,0,NULL,?)`, [id, at, nowIso()]);

@@ -11,6 +11,8 @@ import {
   type MealWithItems, type CustomFood,
 } from "../data";
 import { useUi } from "../store";
+import { takeMealPhoto, loadMealPhoto, deleteMealPhoto } from "../photo";
+import { Capacitor } from "@capacitor/core";
 
 type Pick = { foodKey?: string | null; customFoodId?: string | null };
 const pickId = (p: Pick) => (p.foodKey ? `k:${p.foodKey}` : `c:${p.customFoodId}`);
@@ -39,10 +41,13 @@ export function MealSheet() {
   const [cat, setCat] = useState<FoodCat | null>(null);
   const [note, setNote] = useState("");
   const [confirmDelete, setConfirmDelete] = useState(false);
+  const [photo, setPhoto] = useState<string | null>(null);
+  const [photoBusy, setPhotoBusy] = useState(false);
 
   const load = useCallback(async () => {
     if (!id) return;
     const m = await getMeal(id); setMeal(m);
+    setPhoto(m?.photoPath ? await loadMealPhoto(m.photoPath) : null);
     setPicks(m ? m.items.map((i) => ({ foodKey: i.foodKey, customFoodId: i.customFoodId })) : []);
     setNote(m?.note ?? ""); setCustom(await listCustomFoods()); setUsage(await foodUsage());
   }, [id]);
@@ -70,8 +75,15 @@ export function MealSheet() {
   };
   const groups = [...new Set(picks.flatMap((p) => (p.foodKey ? FOODS.find((f) => f.key === p.foodKey)?.groups ?? [] : customGroups(customById.get(p.customFoodId ?? "") ?? ({ groups: null } as CustomFood)))))];
   const ordered = GROUPS.filter((g) => groups.includes(g));
+  const addPhoto = async (source: "camera" | "photos") => {
+    setPhotoBusy(true);
+    try { const p = await takeMealPhoto(meal.id, source); if (p) { await updateMeal(meal.id, { photoPath: p }); setMeal({ ...meal, photoPath: p }); setPhoto(await loadMealPhoto(p)); bump(); } }
+    finally { setPhotoBusy(false); }
+  };
+  const removePhoto = async () => { await deleteMealPhoto(meal.photoPath); await updateMeal(meal.id, { photoPath: null }); setMeal({ ...meal, photoPath: null }); setPhoto(null); bump(); };
+  const removeMeal = async () => { await deleteMealPhoto(meal.photoPath); await deleteMeal(meal.id); bump(); openMeal(null); };
   const close = async () => {
-    if (!picks.length && !note.trim()) await deleteMeal(meal.id);
+    if (!picks.length && !note.trim() && !meal.photoPath) await deleteMeal(meal.id);
     else { await settings.set("successEvents", settings.successEvents + 1); void maybeAskForReview(); }
     bump(); openMeal(null);
   };
@@ -110,6 +122,17 @@ export function MealSheet() {
         </>
       )}
 
+      <div className="field"><span>{t("meal.photo")}</span>
+        {photo ? (
+          <div className="meal-photo"><img src={photo} alt="" /><button type="button" className="ghost small" onClick={() => void removePhoto()}>{t("meal.photoRemove")}</button></div>
+        ) : (
+          <div className="row tight">
+            {Capacitor.getPlatform() !== "web" && <button type="button" className="ghost" disabled={photoBusy} onClick={() => void addPhoto("camera")}>📷 {t("meal.photoTake")}</button>}
+            <button type="button" className="ghost" disabled={photoBusy} onClick={() => void addPhoto("photos")}>{t("meal.photoPick")}</button>
+          </div>
+        )}
+        <small className="muted">{t("meal.photoHint")}</small>
+      </div>
       <label className="field"><span>{t("meal.note")}</span>
         <textarea rows={2} value={note} onChange={(e) => setNote(e.target.value)} onBlur={async () => { await updateMeal(meal.id, { note: note.trim() || null }); bump(); }} placeholder={t("meal.notePh")} />
       </label>
@@ -117,7 +140,7 @@ export function MealSheet() {
 
       <div className="row between" style={{ marginTop: 14 }}>
         {confirmDelete
-          ? <button type="button" className="ghost danger" onClick={async () => { await deleteMeal(meal.id); bump(); openMeal(null); }}>{t("meal.deleteConfirm")}</button>
+          ? <button type="button" className="ghost danger" onClick={() => void removeMeal()}>{t("meal.deleteConfirm")}</button>
           : <button type="button" className="linklike" onClick={() => setConfirmDelete(true)}>{t("common.delete")}</button>}
         <button type="button" onClick={() => void close()}>{t("common.done")}</button>
       </div>

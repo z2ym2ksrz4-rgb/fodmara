@@ -326,7 +326,8 @@
       "onboarding": "",
       "settings": "",
       "cycle": "Cyklussporing er en del af Pro.",
-      "reintro": "Genintroduktionsplanen er en del af Pro."
+      "reintro": "Genintroduktionsplanen er en del af Pro.",
+      "health": "Eksport til Apple Sundhed er en del af Pro."
     }
   },
   "onboarding": {
@@ -558,7 +559,12 @@
     "notePh": "Restaurant, portionsstørrelse, tilberedning…",
     "hint": "Kun hvad du spiste – mængden bestemmer du. Grupperne er typisk indhold, ikke en dom.",
     "deleteConfirm": "Slet dette måltid?",
-    "empty": "ingen fødevarer tilføjet"
+    "empty": "ingen fødevarer tilføjet",
+    "photo": "Foto",
+    "photoTake": "Tag foto",
+    "photoPick": "Vælg foto",
+    "photoRemove": "Fjern foto",
+    "photoHint": "Bliver på denne telefon – ikke i backupfilen eller PDF'en."
   },
   "stool": {
     "title": "Toiletbesøg",
@@ -858,5 +864,25 @@
     "history": "Alle test",
     "stoppedEarly": "stoppet tidligt",
     "disclaimer": "Fodmara registrerer dine test – den fortæller dig ikke, hvad du skal spise. Tal med din diætist, før du ændrer din kost."
+  },
+  "health": {
+    "title": "Apple Sundhed",
+    "hint": "Skriv udbrud og toiletbesøg til Apple Sundhed som symptom-poster (kramper, oppustethed, diarré, forstoppelse…).",
+    "on": "Til · symptomer skrives til Sundhed",
+    "offToast": "Eksport til Apple Sundhed slået fra (eksisterende poster bliver i Sundhed)",
+    "denied": "Adgang til Apple Sundhed blev ikke givet. Du kan ændre det i Sundhed-appen under Deling.",
+    "synced": "{{n}} poster skrevet til Apple Sundhed"
+  },
+  "csv": {
+    "export": "Eksportér alt som CSV",
+    "done": "CSV oprettet",
+    "type": "Type",
+    "date": "Dato",
+    "time": "Tid",
+    "value": "Værdi",
+    "detail": "Detalje",
+    "note": "Note",
+    "checkin": "Check-in",
+    "until": "til"
   }
 }

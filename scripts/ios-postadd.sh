@@ -5,6 +5,12 @@ set -euo pipefail
 PLIST=ios/App/App/Info.plist
 PB=/usr/libexec/PlistBuddy
 set_key() { $PB -c "Set :$1 '$2'" "$PLIST" 2>/dev/null || $PB -c "Add :$1 string '$2'" "$PLIST"; }
+# Camera / photo library (meal photos, stored only on the device)
+set_key NSCameraUsageDescription "Fodmara can attach a photo of your meal to a meal entry. Photos stay on this device."
+set_key NSPhotoLibraryUsageDescription "Fodmara can attach a photo from your library to a meal entry. Photos stay on this device."
+# HealthKit (write-only gut symptom samples; optional, toggled in Settings)
+set_key NSHealthUpdateUsageDescription "Fodmara can write your logged gut symptoms to Apple Health, if you turn it on in Settings."
+set_key NSHealthShareUsageDescription "Fodmara does not read any Health data. This is only needed to show the Apple Health permission screen."
 $PB -c "Add :ITSAppUsesNonExemptEncryption bool false" "$PLIST" 2>/dev/null || $PB -c "Set :ITSAppUsesNonExemptEncryption false" "$PLIST"
 # Deployment target -> 15.5 (Xcode project + Podfile)
 sed -i '' -E 's/IPHONEOS_DEPLOYMENT_TARGET = [0-9.]+;/IPHONEOS_DEPLOYMENT_TARGET = 15.5;/g' ios/App/App.xcodeproj/project.pbxproj
