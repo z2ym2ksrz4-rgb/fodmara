@@ -1,0 +1,544 @@
+{
+  "nav": {
+    "home": "Hjem",
+    "calendar": "Kalender",
+    "insights": "Innsikt",
+    "settings": "Innstillinger"
+  },
+  "common": {
+    "add": "Legg til",
+    "cancel": "Avbryt",
+    "save": "Lagre",
+    "delete": "Slett",
+    "done": "Ferdig",
+    "other": "Annet…",
+    "typeOwn": "Skriv din egen",
+    "disclaimer": "Fodmara er en dagbok for selvobservasjon, ikke medisinsk utstyr. Den stiller ikke diagnoser og gir ikke behandlingsråd. Snakk med legen din om det du logger.",
+    "edit": "Endre",
+    "off": "Slå av",
+    "on": "Slå på",
+    "search": "Søk"
+  },
+  "home": {
+    "title": "Fodmara",
+    "openSince": "Sterkere siden {{time}}",
+    "tapToEdit": "Trykk for å avslutte eller legge til detaljer",
+    "recent": "Siste oppblussinger",
+    "ongoing": "pågår",
+    "empty": "Ingen oppblussinger logget. Når den plutselig blir sterkere, trykk Sterkere nå.",
+    "checkinTitle": "I dag",
+    "checkin": {
+      "none": "Rolig dag",
+      "mild": "Merkbar dag",
+      "attack": "Tung dag"
+    },
+    "fields": {
+      "sleep": "Søvn i natt",
+      "stress": "Stress",
+      "loudness": "Styrke",
+      "distress": "Plage",
+      "noise": "Støy i dag"
+    },
+    "greeting": "Hei {{name}}",
+    "saveDay": "Lagre dagen",
+    "savedDay": "Dagen er lagret",
+    "periodToday": "Mens i dag",
+    "periodShort": "mens",
+    "periodHint": "Trykk for å markere i dag",
+    "todayIs": "I dag: {{word}}",
+    "louderNow": "Sterkere nå",
+    "louderHint": "Logg en oppblussing – detaljer kan vente",
+    "endSpike": "Det har roet seg",
+    "weekTitle": "Siste 7 dager",
+    "avg7": "snittstyrke",
+    "vsLastWeek": "mot uka før",
+    "spikesMonth_one": "oppblussing denne måneden",
+    "spikesMonth_other": "oppblussinger denne måneden",
+    "sparkEmpty": "Sjekk inn noen dager, så dukker kurven din opp her.",
+    "fieldHint": {
+      "distress": "1 ikke i det hele tatt · 5 mye",
+      "sleep": "1 dårlig · 5 god",
+      "stress": "1 rolig · 5 mye",
+      "noise": "1 stille · 5 svært høyt"
+    }
+  },
+  "episode": {
+    "title": "Oppblussing",
+    "ongoing": "Sterkere akkurat nå",
+    "start": "Start",
+    "end": "Slutt",
+    "duration": "{{h}} t",
+    "intensity": "Høyeste styrke",
+    "mildLbl": "litt sterkere",
+    "severeLbl": "svært sterk",
+    "note": "Notat",
+    "notePh": "Annet som er verdt å huske",
+    "deleteConfirm": "Slette denne oppblussingen?",
+    "quickIntro": "Logget. Resten kan vente til det har roet seg.",
+    "howBad": "Hvor sterk er den akkurat nå?",
+    "level": {
+      "mild": "Litt sterkere",
+      "moderate": "Mye sterkere",
+      "severe": "Ekstremt sterk"
+    },
+    "laterLink": "Fyll ut senere",
+    "journey": {
+      "trigger": "Hva tror du satte den i gang?",
+      "symptom": "Hva la du ellers merke til?",
+      "meds": "Tok eller brukte du noe?",
+      "note": "Noe å huske?",
+      "relief": "Hva hjalp?",
+      "sound": "Hvordan høres den ut?"
+    },
+    "more": "{{n}} flere…",
+    "skip": "Hopp over",
+    "editAll": "Endre alle detaljer",
+    "doneTitle": "Logget",
+    "tagsCount": "markeringer",
+    "cmpTitle": "Denne oppblussingen mot snittet ditt",
+    "cmpThis": "Denne oppblussingen",
+    "cmpAvg": "Snitt av {{n}} oppblussinger",
+    "cmpNeedMore": "Logg et par oppblussinger til, så vises hvordan denne står seg mot snittet ditt.",
+    "cmpLocked": "Pro viser hvordan denne oppblussingen står seg mot snittet ditt.",
+    "liveHint": "Når det har roet seg, kommer noen korte spørsmål – svar på det du kan.",
+    "howBadNow": "Hvor sterk er den akkurat nå?"
+  },
+  "calendar": {
+    "spike": "Oppblussing",
+    "loudness": "Styrke {{n}} – {{word}}",
+    "noCheckin": "Ingen innsjekk denne dagen."
+  },
+  "meds": {
+    "title": "Medisiner og hjelpemidler",
+    "sub": "Dine egne medisiner, kosttilskudd og hjelpemidler (f.eks. høreapparat eller lydgenerator) med navn. Fodmara foreslår aldri behandling eller doser.",
+    "name": "Navn",
+    "namePh": "f.eks. Melatonin eller Lydgenerator",
+    "acute": "Ved behov",
+    "preventive": "Fast",
+    "acuteHint": "Logg det du brukte under en oppblussing i de siste trinnene.",
+    "addFirst": "Legg til medisin eller hjelpemiddel",
+    "show": "Vis",
+    "hide": "Skjul"
+  },
+  "insights": {
+    "title": "Innsikt",
+    "lockedTitle": "Kurven din krever Pro",
+    "lockedBody": "Styrken over 90 dager og per måned, hvordan søvn, stress og støy henger sammen med sterkere dager, hvilke triggere som går igjen – pluss PDF-rapporten til legen.",
+    "range": {
+      "month": "Denne måneden",
+      "3m": "3 måneder",
+      "12m": "12 måneder"
+    },
+    "noData": "Ikke nok data ennå.",
+    "disclaimer": "Snitt og andeler er enkle opptellinger av det du har logget, ikke bevis for årsaker.",
+    "patterns": "Mønstrene dine",
+    "patWeekday": "{{pct}} % av oppblussingene dine startet en {{day}}",
+    "patTime": "{{pct}} % av oppblussingene dine startet om {{part}}",
+    "part": {
+      "night": "natten",
+      "morning": "morgenen",
+      "afternoon": "ettermiddagen",
+      "evening": "kvelden"
+    },
+    "patPeriod": "{{pct}} % av oppblussingene dine startet innen en dag fra mensen",
+    "patBasis": "Basert på {{n}} oppblussinger de siste 6 månedene",
+    "patNote": "Mønstre beskriver loggen din – de beviser ingen årsak. Ta dem med til legen.",
+    "patNeed": "Mønstre dukker opp etter omtrent to ukers daglige innsjekker.",
+    "patPressure": "{{pct}} % av oppblussingene dine startet en dag med fallende lufttrykk (≥{{hpa}} hPa) – mot {{all}} % av alle dager.",
+    "learnTitle": "Slik ser det ut",
+    "learnNote": "Observasjoner fra din egen dagbok med vanlige ord. De beskriver – de forklarer ikke.",
+    "learnEmpty": "Etter et par ukers innsjekker oppsummerer den her med vanlige ord hva som skiller seg ut.",
+    "loud90": "Styrke, siste 90 dager",
+    "loud90Hint": "Prikker = dine daglige innsjekker · linje = 7-dagers snitt",
+    "monthly": "Snittstyrke per måned",
+    "avgLoud": "snittstyrke (0–10)",
+    "avgDistress": "snittplage (1–5)",
+    "hardDays": "tunge dager (7+) av {{n}} logget",
+    "spikes": "Oppblussinger",
+    "avgSpikeHours": "snitt timer per oppblussing",
+    "shareOfSpikes": "andel av oppblussingene",
+    "contrast": {
+      "sleep": "Etter gode netter (4–5) lå tinnitusen din i snitt på {{hi}} – etter dårlige netter (1–2) på {{lo}}",
+      "stress": "På stressede dager (4–5) lå den på {{hi}} – på rolige dager (1–2) på {{lo}}",
+      "noise": "Dagen etter en støyende dag (4–5) lå den på {{hi}} – etter stille dager (1–2) på {{lo}}"
+    },
+    "contrastBasis": "Basert på {{hi}} og {{lo}} dager de siste 6 månedene"
+  },
+  "report": {
+    "title": "Tinnitusdagbok – rapport",
+    "cta": "PDF-rapport",
+    "sub": "Oversikt på én side, styrken uke for uke og én linje per oppblussing – satt opp for fastlegen eller øre-nese-hals-legen.",
+    "preset": {
+      "month": "Denne måneden",
+      "last": "Forrige måned",
+      "3m": "Siste 3 måneder",
+      "custom": "Velg datoer"
+    },
+    "from": "Fra",
+    "to": "Til",
+    "make": "Lag PDF",
+    "hours": "Timer",
+    "count": "Antall (andel)",
+    "footer": "Laget med {{app}} – en dagbok for selvobservasjon, ikke medisinsk utstyr",
+    "chartTitle": "Styrke per uke",
+    "notesTitle": "Notater til legen",
+    "notesPh": "Spørsmål, endringer i hørselen, medisiner eller hjelpemidler, annet…",
+    "pressureCol": "hPa (Δ)",
+    "pressureNote": "hPa = døgnmiddel for lufttrykk på stedet ditt, Δ = endring fra dagen før.",
+    "daysLogged": "Loggede dager",
+    "hardDays": "Tunge dager (styrke 7+)",
+    "spikes": "Oppblussinger",
+    "peakShort": "Topp",
+    "legendLoud": "Snittstyrke (0–10)",
+    "legendSpikes": "Oppblussinger den uka",
+    "weeks": "Uke for uke",
+    "week": "Uke fra",
+    "loudShort": "Styrke",
+    "distressShort": "Plage",
+    "daysShort": "Dager",
+    "scaleNote": "Styrke 0–10; plage, søvn, stress og støy 1–5 (søvn: 5 = god).",
+    "helped": "Hjalp / brukt"
+  },
+  "notif": {
+    "checkinTitle": "Hvor sterk er den i dag?",
+    "checkinBody": "En innsjekk på 5 sekunder holder kurven din komplett.",
+    "openTitle": "Har det roet seg?",
+    "openBody": "En oppblussing har stått åpen i 12 timer. Trykk for å sette når den sluttet.",
+    "actionEnd": "Roet seg nå",
+    "actionContinue": "Fortsatt sterk"
+  },
+  "lock": {
+    "title": "Skriv inn PIN",
+    "hint": "Dagboken din er låst. Skriv inn PIN-koden på 4–6 sifre."
+  },
+  "settings": {
+    "language": "Språk",
+    "privacy": "Personvern",
+    "privacyPolicy": "Personvernerklæring",
+    "support": "Support",
+    "diary": "Dagbok",
+    "manage": "Administrer",
+    "reminders": "Påminnelser",
+    "checkinReminder": "Daglig innsjekk-påminnelse",
+    "reminderTime": "Tidspunkt",
+    "openEpisodeReminder": "Minn meg på det hvis en oppblussing står åpen i 12 timer",
+    "pin": "PIN-lås",
+    "pinOn": "På – spør etter 1 minutt i bakgrunnen",
+    "pinOff": "Av",
+    "pinSetup": "Sett PIN",
+    "pinRemove": "Fjern",
+    "pinRemoved": "PIN fjernet",
+    "pinSet": "PIN satt",
+    "pinNew": "Ny PIN (4–6 sifre)",
+    "pinRepeat": "Gjenta PIN",
+    "pinMismatch": "PIN-kodene er ikke like",
+    "pinHint": "En glemt PIN kan ikke gjenopprettes – bare sletting av alle data låser opp appen.",
+    "data": "Dine data",
+    "dataNote": "Alt blir på denne telefonen. Sikkerhetskopien er kryptert med passordfrasen din og deles av deg selv – vi laster aldri opp noe.",
+    "about": "Om",
+    "feedback": "Send tilbakemelding",
+    "restored": "Kjøp gjenopprettet",
+    "proThanks": "Takk for at du støtter Fodmara.",
+    "freeHint": "Ubegrenset logging. Pro gir kurven din, mønstre, PDF-rapporten og PIN-lås.",
+    "profile": "Profil",
+    "whatIsThis": "Hva er dette?",
+    "cycleTracking": "Registrer menstruasjonssyklus",
+    "cycleHint": "Legger til «mens i dag» i innsjekken og viser andelen oppblussinger rundt mensen.",
+    "widget": "Widget",
+    "planLifetime": "Livstid – fornyes ikke",
+    "planYearly": "Årlig · fornyes {{date}}",
+    "planTrial": "Gratis prøveperiode til {{date}}",
+    "planRenews": "Fornyes {{date}}",
+    "planEnds": "Utløper {{date}}",
+    "switchLifetime": "Bytt til livstid",
+    "switchLifetimeHint": "Kjøp livstid én gang, og si deretter opp årsplanen under Administrer abonnement – butikken bytter ikke automatisk.",
+    "manageSub": "Administrer abonnement",
+    "planStore": "Kjøpt via {{store}}",
+    "triggers": "Triggere"
+  },
+  "backup": {
+    "export": "Eksporter kryptert sikkerhetskopi",
+    "import": "Importer sikkerhetskopi",
+    "passphrase": "Velg en passordfrase for sikkerhetskopien",
+    "passphraseShort": "Passordfrase",
+    "file": "Sikkerhetskopi",
+    "importHint": "Nyeste oppføring vinner når samme oppføring finnes på begge telefonene.",
+    "wrongApp": "Denne sikkerhetskopien tilhører en annen app",
+    "exported": "Sikkerhetskopi eksportert",
+    "imported": "Sikkerhetskopi importert",
+    "importFailed": "Kunne ikke importere – feil passordfrase eller fil?",
+    "wipe": "Slett alle data",
+    "wipeConfirm": "Dette sletter permanent alt appen har lagret på denne enheten. Eksporterte sikkerhetskopier påvirkes ikke. Fortsette?",
+    "wiped": "Alle data slettet"
+  },
+  "plan": {
+    "free": "Gratis",
+    "pro": "Fodmara Pro",
+    "upgrade": "Oppgrader"
+  },
+  "paywall": {
+    "title": "Se hva som gjør den sterkere",
+    "benefits": [
+      "Styrkekurven din over uker og måneder",
+      "Hvordan søvn, stress og støy henger sammen med sterkere dager",
+      "PDF-rapport legen kan lese på ett minutt",
+      "PIN-lås, kryptert sikkerhetskopi og ubegrenset historikk"
+    ],
+    "plan": {
+      "annual": "Årlig",
+      "lifetime": "Livstid"
+    },
+    "trial": "7 dager gratis, deretter årlig",
+    "ctaTrial": "Start gratis prøveperiode",
+    "ctaBuy": "Kjøp én gang",
+    "legal": "Avslutt når som helst i butikkontoen din. Logging er gratis for alltid.",
+    "restore": "Gjenopprett kjøp",
+    "terms": "Vilkår",
+    "reasons": {
+      "insights": "Kurven din og rapporten er en del av Pro.",
+      "history": "Gratis viser de siste 90 dagene. Pro beholder alt.",
+      "pin": "PIN-låsen er en del av Pro.",
+      "backup": "Sikkerhetskopi og import er en del av Pro.",
+      "onboarding": "",
+      "settings": "",
+      "weather": "Lufttrykk er en del av Pro.",
+      "cycle": "Menssyklus er en del av Pro."
+    }
+  },
+  "onboarding": {
+    "steps": [
+      {
+        "title": "Ett tall om dagen",
+        "body": "Hvor sterk var den i dag, 0–10? Fem sekunder om kvelden. Over uker blir tallet en kurve du faktisk kan vise noen."
+      },
+      {
+        "title": "Sterkere nå",
+        "body": "Når den plutselig blusser opp, logger ett trykk det. Hvordan den høres ut, hva som satte den i gang og hva som hjalp, kan vente."
+      },
+      {
+        "title": "Privat fra bunnen av",
+        "body": "Ingen konto, ingen sky, ingen sporing. Dagboken din bor på denne telefonen, og bare du kan eksportere den."
+      }
+    ],
+    "next": "Neste",
+    "skip": "Hopp over",
+    "start": "Kom i gang",
+    "welcome": "Velkommen til Fodmara",
+    "welcomeBody": "Velg språk og fortell oss hva vi skal kalle deg.",
+    "name": "Fornavn",
+    "namePh": "Fornavnet ditt (valgfritt)",
+    "setupTitle": "Om tinnitusen din {{name}}",
+    "widgetTitle": "Ett trykk fra hjemskjermen",
+    "widgetBody": "Widgeten logger en oppblussing uten å åpne appen og viser dagens tall og 7-dagers snittet ditt.",
+    "widgetLater": "Du kan legge den til senere: Innstillinger → Widget → Legg til.",
+    "extrasTitle": "Ekstra",
+    "extrasBody": "Valgfritt. Begge deler er en del av Pro – de slås på i det øyeblikket du starter den gratis prøveperioden.",
+    "extrasNote": "Alt kan endres i Innstillinger når som helst.",
+    "setupBody": "Valgfritt – det står øverst i rapporten din, så legen ser det grunnleggende.",
+    "sinceQ": "Hvor lenge har du hatt den?",
+    "sinceQShort": "Siden",
+    "since": {
+      "lt3m": "Under 3 måneder",
+      "3to12m": "3–12 måneder",
+      "1to5y": "1–5 år",
+      "gt5y": "Over 5 år"
+    },
+    "sideQ": "Hvor hører du den?",
+    "soundQ": "Hvordan høres den vanligvis ut?",
+    "newHint": "Ny tinnitus bør sjekkes av lege – særlig sammen med en endring i hørselen."
+  },
+  "lang": {
+    "en": "English",
+    "da": "Dansk",
+    "de": "Deutsch",
+    "sv": "Svenska",
+    "nb": "Norsk"
+  },
+  "diary": {
+    "groups": {
+      "trigger": "Triggere",
+      "symptom": "Merket også",
+      "relief": "Hva hjalp",
+      "location": "Hvor",
+      "sound": "Lyd"
+    },
+    "tags": {
+      "trigger": {
+        "loud_noise": "Høy støy",
+        "headphones": "Hodetelefoner",
+        "concert": "Konsert / fest",
+        "quiet_room": "Svært stille rom",
+        "stress": "Stress",
+        "poor_sleep": "Dårlig søvn",
+        "caffeine": "Koffein",
+        "alcohol": "Alkohol",
+        "salt": "Salt mat",
+        "nicotine": "Nikotin",
+        "jaw_clench": "Tanngnissing / kjevespenning",
+        "neck_tension": "Stiv nakke",
+        "cold_illness": "Forkjølelse / sykdom",
+        "flight_pressure": "Fly / trykkendring",
+        "medication_change": "Endret medisin",
+        "fatigue": "Tretthet",
+        "exertion": "Fysisk anstrengelse"
+      },
+      "sound": {
+        "ringing": "Ringing",
+        "whistling": "Piping",
+        "hissing": "Susing",
+        "buzzing": "Surring",
+        "humming": "Brumming",
+        "roaring": "Brusing",
+        "pulsing": "Pulserende",
+        "clicking": "Klikking",
+        "several": "Flere lyder"
+      },
+      "location": {
+        "left": "Venstre øre",
+        "right": "Høyre øre",
+        "both": "Begge ører",
+        "in_head": "Inne i hodet"
+      },
+      "symptom": {
+        "hyperacusis": "Lydfølsomhet",
+        "ear_fullness": "Dottfølelse i øret",
+        "muffled_hearing": "Dempet hørsel",
+        "dizziness": "Svimmelhet",
+        "headache": "Hodepine",
+        "jaw_pain": "Kjevesmerter",
+        "neck_pain": "Nakkesmerter",
+        "concentration": "Vanskelig å konsentrere seg",
+        "sleep_trouble": "Vanskelig å sove",
+        "anxiety": "Bekymring / angst",
+        "irritability": "Irritabilitet",
+        "fatigue": "Utmattelse"
+      },
+      "relief": {
+        "masking": "Maskeringslyd",
+        "nature_sounds": "Naturlyder",
+        "music": "Musikk",
+        "distraction": "Distraksjon",
+        "relaxation": "Avslapning",
+        "breathing": "Pusteøvelse",
+        "exercise": "Trening",
+        "sleep": "Søvn",
+        "hearing_aid": "Høreapparat",
+        "fresh_air": "Frisk luft",
+        "talking": "Snakke med noen"
+      }
+    }
+  },
+  "widget": {
+    "title": "Sterkere nå-widget",
+    "ongoing": "Sterkere akkurat nå",
+    "noData": "Ingen innsjekker ennå",
+    "settingsHint": "Logg en oppblussing fra hjemskjermen eller låseskjermen",
+    "guideBtn": "Legg til",
+    "previewLine1": "I dag: 3/10",
+    "previewLine2": "7-dagers snitt 3,4 · 2 oppblussinger denne md.",
+    "intro": "Ett trykk på widgeten logger en oppblussing – du trenger ikke lete opp appen først.",
+    "stepsIos": [
+      "Hold fingeren på et tomt sted på hjemskjermen til appene begynner å vippe.",
+      "Trykk på + (øverst til venstre) og søk etter Fodmara.",
+      "Velg den lille eller mellomstore widgeten og trykk Legg til widget."
+    ],
+    "stepsAndroid": [
+      "Hold fingeren på et tomt sted på hjemskjermen.",
+      "Trykk Moduler og finn Fodmara.",
+      "Dra widgeten inn på hjemskjermen."
+    ],
+    "lockscreen": "Låseskjerm: hold fingeren på låseskjermen → Tilpass → trykk på widgetfeltet → Fodmara.",
+    "louderNow": "Sterkere nå",
+    "openSpike": "Oppblussing pågår",
+    "notLogged": "I dag ikke logget ennå",
+    "today": "I dag: {{n}}/10",
+    "avg7": "7-dagers snitt {{n}}",
+    "spikes_one": "{{count}} oppblussing denne md.",
+    "spikes_other": "{{count}} oppblussinger denne md."
+  },
+  "weather": {
+    "title": "Lufttrykk",
+    "hint": "Følg dagens lufttrykk for stedet ditt – ingen posisjonstilgang nødvendig.",
+    "choose": "Velg sted",
+    "changePlace": "Bytt sted",
+    "on": "På · {{place}}",
+    "off": "Lufttrykk-sporing slått av",
+    "pickTitle": "Ditt sted",
+    "pickHint": "Skriv en by. Bare byens koordinater sendes til værtjenesten (Open-Meteo) – aldri enhetens posisjon.",
+    "placePh": "By, f.eks. Bergen",
+    "searchFailed": "Søket mislyktes – sjekk tilkoblingen",
+    "privacy": "Open-Meteo er en gratis, åpen værtjeneste uten konto eller sporing. Trykkhistorikken lagres bare på enheten din.",
+    "pressureNow": "Lufttrykk {{p}} hPa",
+    "noData": "Henter lufttrykk…",
+    "falling": "Falt {{d}} hPa siden i går",
+    "rising": "Steget {{d}} hPa siden i går",
+    "stable": "Stabilt siden i går",
+    "whatIsIt": "Hva betyr det?",
+    "infoTitle": "Om lufttrykk",
+    "infoWhat": "Lufttrykk (hPa) er atmosfærens vekt. Rundt 1013 hPa er gjennomsnitt; stigende trykk betyr som regel rolig vær, fallende trykk at en front er på vei.",
+    "infoWhy": "Noen med tinnitus – særlig ved Ménières sykdom eller trykkproblemer i øret – merker endringer når lufttrykket skifter. Dokumentasjonen er begrenset og det varierer fra person til person; endringen betyr mer enn selve verdien.",
+    "infoApp": "Fodmara lagrer døgngjennomsnittet for stedet ditt og sammenligner dagene oppblussingene dine startet med alle andre dager. Mønsterkortet og rapporten viser den sammenligningen – ikke noe mer.",
+    "infoDisclaimer": "Dette er en beskrivelse av din egen dagbok, ikke en medisinsk uttalelse. Snakk med legen din om hva det betyr for deg."
+  },
+  "learn": {
+    "weekday": "{{pct}} % av oppblussingene dine startet en {{day}}.",
+    "time": "Oppblussingene dine starter oftest om {{part}} ({{pct}} %).",
+    "period": "{{pct}} % av oppblussingene dine startet innen en dag fra mensen.",
+    "pressureYes": "{{pct}} % av oppblussingene dine startet en dag da lufttrykket falt minst {{hpa}} hPa – bare {{all}} % av alle dager hadde et slikt fall.",
+    "pressureNo": "Fallende lufttrykk skiller seg ikke ut: {{pct}} % av oppblussingene dine startet en dag med fallende trykk, omtrent som alle dager ({{all}} %).",
+    "trigger": "«{{tag}}» er triggeren du logger oftest – ved {{pct}} % av oppblussingene.",
+    "trendDown": "De siste 30 dagene lå tinnitusen din i snitt på {{now}} – ned fra {{before}} de 30 dagene før.",
+    "trendUp": "De siste 30 dagene lå tinnitusen din i snitt på {{now}} – opp fra {{before}} de 30 dagene før.",
+    "trendSame": "De siste 30 dagene lå tinnitusen din i snitt på {{now}} – omtrent som de 30 dagene før ({{before}}).",
+    "contrast": {
+      "sleep": "Etter gode netter lå den i snitt på {{hi}}, etter dårlige netter på {{lo}}.",
+      "stress": "På stressede dager lå den på {{hi}}, på rolige dager på {{lo}}.",
+      "noise": "Dagen etter en støyende dag lå den på {{hi}}, etter stille dager på {{lo}}."
+    },
+    "relief": "«{{tag}}» hjalp ved {{pct}} % av oppblussingene dine."
+  },
+  "loud": {
+    "question": "Hvor sterk er tinnitusen din i dag?",
+    "pick": "Trykk på et tall",
+    "min": "0 · merkes ikke",
+    "max": "10 · så sterk som den blir",
+    "level": {
+      "silent": "Merkes ikke",
+      "low": "Svak",
+      "noticeable": "Merkbar",
+      "loud": "Sterk",
+      "veryLoud": "Svært sterk"
+    },
+    "infoTitle": "Om skalaen 0–10",
+    "infoWhat": "Vurder hvor sterk tinnitusen var mesteparten av dagen – ikke det verste øyeblikket (det er det Sterkere nå er til). Tallet er ditt: sammenlign med dine egne dager, ikke med andres.",
+    "infoScale": [
+      "0 – du legger ikke merke til den",
+      "1–3 – der hvis du lytter etter",
+      "4–6 – merkbar, men du kan skyve den i bakgrunnen",
+      "7–8 – sterk og vanskelig å overse",
+      "9–10 – så sterk som den noen gang blir"
+    ],
+    "infoTip": "Sjekk inn omtrent samme tid hver dag, for eksempel om kvelden. Plage logges for seg, fordi hvor mye den går inn på deg ofte svinger mer enn selve styrken."
+  },
+  "redFlags": {
+    "link": "Når bør jeg raskt til lege?",
+    "title": "Når du bør til lege raskt",
+    "intro": "Tinnitus er som regel ufarlig i seg selv. Noen få situasjoner krever rask legehjelp:",
+    "urgentTitle": "Samme dag – eller ring 113",
+    "urgent": [
+      "Hørselen faller plutselig på det ene øret (i løpet av timer eller noen dager). Plutselig hørselstap behandles best innen få dager.",
+      "Tinnitus kommer sammen med plutselig kraftig svimmelhet, lammelse i ansiktet, dobbeltsyn eller problemer med å snakke.",
+      "Den startet etter et slag mot hodet."
+    ],
+    "soonTitle": "Bestill time snart",
+    "soon": [
+      "Den er bare i det ene øret og går ikke bort.",
+      "Den pulserer i takt med hjertet.",
+      "Den kommer med øresmerter, renning fra øret eller tett øre som ikke går over.",
+      "Den er ny og har ikke blitt undersøkt.",
+      "Den går mye ut over søvnen, humøret eller jobben – det finnes hjelp."
+    ],
+    "routine": "Tinnitus du har hatt lenge og som er undersøkt, er som regel ikke farlig. Lydterapi, høreapparater og opplegg basert på kognitiv terapi får du via fastlegen eller en øre-nese-hals-lege.",
+    "disclaimer": "Generell informasjon, ikke en diagnose. Er du i tvil, ring fastlegen eller legevakten på 116 117."
+  }
+}

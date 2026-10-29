@@ -1,0 +1,132 @@
+key	cat	groups	portion	en	da	de	sv	nb
+onion	veg	fructan		Onion	Løg	Zwiebel	Lök	Løk
+garlic	veg	fructan		Garlic	Hvidløg	Knoblauch	Vitlök	Hvitløk
+leek	veg	fructan	p	Leek (white part)	Porre (hvide del)	Lauch (weißer Teil)	Purjolök (vita delen)	Purre (hvit del)
+spring_onion_white	veg	fructan		Spring onion (white part)	Forårsløg (hvide del)	Frühlingszwiebel (weißer Teil)	Salladslök (vita delen)	Vårløk (hvit del)
+spring_onion_green	veg			Spring onion (green part)	Forårsløg (grønne del)	Frühlingszwiebel (grüner Teil)	Salladslök (gröna delen)	Vårløk (grønn del)
+shallot	veg	fructan		Shallot	Skalotteløg	Schalotte	Schalottenlök	Sjalottløk
+asparagus	veg	fructose,fructan		Asparagus	Asparges	Spargel	Sparris	Asparges
+artichoke	veg	fructan		Artichoke	Artiskok	Artischocke	Kronärtskocka	Artisjokk
+jerusalem_artichoke	veg	fructan		Jerusalem artichoke	Jordskok	Topinambur	Jordärtskocka	Jordskokk
+cauliflower	veg	mannitol		Cauliflower	Blomkål	Blumenkohl	Blomkål	Blomkål
+mushrooms	veg	mannitol		Mushrooms	Svampe	Pilze	Svamp	Sopp
+celery	veg	mannitol	p	Celery	Bladselleri	Staudensellerie	Blekselleri	Stangselleri
+sweet_potato	veg	mannitol	p	Sweet potato	Søde kartofler	Süßkartoffel	Sötpotatis	Søtpotet
+snow_peas	veg	fructan,mannitol		Snow peas	Sukkerærter	Zuckerschoten	Sockerärtor	Sukkererter
+green_peas	veg	gos,fructan	p	Green peas	Grønne ærter	Erbsen	Gröna ärtor	Grønne erter
+beetroot	veg	fructan,gos	p	Beetroot	Rødbeder	Rote Bete	Rödbetor	Rødbeter
+brussels_sprouts	veg	fructan	p	Brussels sprouts	Rosenkål	Rosenkohl	Brysselkål	Rosenkål
+savoy_cabbage	veg	fructan	p	Savoy cabbage	Savojkål	Wirsing	Savojkål	Savoykål
+white_cabbage	veg	sorbitol	p	White cabbage	Hvidkål	Weißkohl	Vitkål	Hvitkål
+broccoli	veg	fructose	p	Broccoli	Broccoli	Brokkoli	Broccoli	Brokkoli
+zucchini	veg	fructan	p	Courgette	Squash	Zucchini	Zucchini	Squash
+sweetcorn	veg	sorbitol	p	Sweetcorn	Majs	Mais	Majs	Mais
+green_beans	veg	sorbitol	p	Green beans	Grønne bønner	Grüne Bohnen	Haricots verts	Aspargesbønner
+fennel	veg	fructan	p	Fennel	Fennikel	Fenchel	Fänkål	Fennikel
+carrot	veg			Carrot	Gulerod	Karotte	Morot	Gulrot
+potato	veg			Potato	Kartofler	Kartoffeln	Potatis	Potet
+tomato	veg			Tomato	Tomat	Tomate	Tomat	Tomat
+cucumber	veg			Cucumber	Agurk	Gurke	Gurka	Agurk
+lettuce	veg			Lettuce	Salat	Blattsalat	Sallad	Salat
+spinach	veg			Spinach	Spinat	Spinat	Spenat	Spinat
+bell_pepper	veg			Bell pepper	Peberfrugt	Paprika	Paprika	Paprika
+aubergine	veg			Aubergine	Aubergine	Aubergine	Aubergine	Aubergine
+kale	veg			Kale	Grønkål	Grünkohl	Grönkål	Grønnkål
+parsnip	veg			Parsnip	Pastinak	Pastinake	Palsternacka	Pastinakk
+radish	veg			Radish	Radiser	Radieschen	Rädisor	Reddik
+ginger	veg			Ginger	Ingefær	Ingwer	Ingefära	Ingefær
+apple	fruit	fructose,sorbitol		Apple	Æble	Apfel	Äpple	Eple
+pear	fruit	fructose,sorbitol		Pear	Pære	Birne	Päron	Pære
+mango	fruit	fructose		Mango	Mango	Mango	Mango	Mango
+watermelon	fruit	fructose,fructan,mannitol		Watermelon	Vandmelon	Wassermelone	Vattenmelon	Vannmelon
+cherries	fruit	fructose,sorbitol		Cherries	Kirsebær	Kirschen	Körsbär	Kirsebær
+apricot	fruit	sorbitol		Apricot	Abrikos	Aprikose	Aprikos	Aprikos
+plum	fruit	sorbitol		Plum	Blomme	Pflaume	Plommon	Plomme
+peach	fruit	sorbitol		Peach	Fersken	Pfirsich	Persika	Fersken
+nectarine	fruit	sorbitol		Nectarine	Nektarin	Nektarine	Nektarin	Nektarin
+blackberries	fruit	sorbitol		Blackberries	Brombær	Brombeeren	Björnbär	Bjørnebær
+avocado	fruit	sorbitol	p	Avocado	Avocado	Avocado	Avokado	Avokado
+dried_fruit	fruit	fructose,fructan		Dried fruit (raisins, dates, figs)	Tørret frugt (rosiner, dadler, figner)	Trockenobst (Rosinen, Datteln, Feigen)	Torkad frukt (russin, dadlar, fikon)	Tørket frukt (rosiner, dadler, fiken)
+banana_ripe	fruit	fructan	p	Banana (ripe)	Banan (moden)	Banane (reif)	Banan (mogen)	Banan (moden)
+banana_firm	fruit			Banana (firm)	Banan (fast)	Banane (fest)	Banan (fast)	Banan (fast)
+orange	fruit			Orange	Appelsin	Orange	Apelsin	Appelsin
+kiwi	fruit			Kiwi	Kiwi	Kiwi	Kiwi	Kiwi
+strawberries	fruit			Strawberries	Jordbær	Erdbeeren	Jordgubbar	Jordbær
+blueberries	fruit			Blueberries	Blåbær	Heidelbeeren	Blåbär	Blåbær
+raspberries	fruit			Raspberries	Hindbær	Himbeeren	Hallon	Bringebær
+grapes	fruit			Grapes	Vindruer	Weintrauben	Vindruvor	Druer
+pineapple	fruit			Pineapple	Ananas	Ananas	Ananas	Ananas
+lemon_lime	fruit			Lemon or lime	Citron eller lime	Zitrone oder Limette	Citron eller lime	Sitron eller lime
+cantaloupe	fruit			Cantaloupe melon	Cantaloupemelon	Cantaloupe-Melone	Cantaloupemelon	Cantaloupemelon
+wheat_bread	grain	fructan		Wheat bread	Hvedebrød	Weizenbrot	Vetebröd	Hvetebrød
+rye_bread	grain	fructan		Rye bread	Rugbrød	Roggenbrot	Rågbröd	Rugbrød
+spelt_sourdough	grain	fructan	p	Spelt sourdough bread	Surdejsbrød af spelt	Dinkel-Sauerteigbrot	Surdegsbröd på dinkel	Surdeigsbrød av spelt
+wheat_pasta	grain	fructan		Pasta (wheat)	Pasta (hvede)	Nudeln (Weizen)	Pasta (vete)	Pasta (hvete)
+couscous	grain	fructan		Couscous	Couscous	Couscous	Couscous	Couscous
+barley	grain	fructan		Barley	Byg	Gerste	Korn	Bygg
+oats	grain	fructan	p	Oats	Havregryn	Haferflocken	Havregryn	Havregryn
+wheat_cereal	grain	fructan		Wheat-based cereal	Morgenmadsprodukt med hvede	Frühstücksflocken aus Weizen	Frukostflingor med vete	Frokostblanding med hvete
+rice	grain			Rice	Ris	Reis	Ris	Ris
+quinoa	grain			Quinoa	Quinoa	Quinoa	Quinoa	Quinoa
+gluten_free_bread	grain			Gluten-free bread	Glutenfrit brød	Glutenfreies Brot	Glutenfritt bröd	Glutenfritt brød
+rice_noodles	grain			Rice noodles	Risnudler	Reisnudeln	Risnudlar	Risnudler
+corn_tortilla	grain			Corn tortilla	Majstortilla	Maistortilla	Majstortilla	Maistortilla
+buckwheat	grain			Buckwheat	Boghvede	Buchweizen	Bovete	Bokhvete
+milk	dairy	lactose		Milk	Mælk	Milch	Mjölk	Melk
+yogurt	dairy	lactose		Yogurt	Yoghurt	Joghurt	Yoghurt	Yoghurt
+cream	dairy	lactose	p	Cream	Fløde	Sahne	Grädde	Fløte
+ice_cream	dairy	lactose		Ice cream	Is	Eis	Glass	Iskrem
+soft_cheese	dairy	lactose		Soft cheese (ricotta, cottage cheese)	Blød ost (ricotta, hytteost)	Frischkäse (Ricotta, Hüttenkäse)	Färskost (ricotta, keso)	Myk ost (ricotta, cottage cheese)
+hard_cheese	dairy			Hard cheese (cheddar, parmesan)	Fast ost (cheddar, parmesan)	Hartkäse (Cheddar, Parmesan)	Hårdost (cheddar, parmesan)	Hard ost (cheddar, parmesan)
+butter	dairy			Butter	Smør	Butter	Smör	Smør
+lactose_free_milk	dairy			Lactose-free milk	Laktosefri mælk	Laktosefreie Milch	Laktosfri mjölk	Laktosefri melk
+chicken	protein			Chicken	Kylling	Hähnchen	Kyckling	Kylling
+beef	protein			Beef	Oksekød	Rindfleisch	Nötkött	Storfekjøtt
+pork	protein			Pork	Svinekød	Schweinefleisch	Fläskkött	Svinekjøtt
+fish	protein			Fish	Fisk	Fisch	Fisk	Fisk
+eggs	protein			Eggs	Æg	Eier	Ägg	Egg
+tofu	protein			Firm tofu	Fast tofu	Fester Tofu	Fast tofu	Fast tofu
+sausages	protein	fructan	p	Sausages or cold cuts	Pølser eller pålæg	Würstchen oder Aufschnitt	Korv eller pålägg	Pølser eller pålegg
+chickpeas	legume	gos	p	Chickpeas	Kikærter	Kichererbsen	Kikärtor	Kikerter
+lentils	legume	gos	p	Lentils	Linser	Linsen	Linser	Linser
+kidney_beans	legume	gos,fructan		Kidney beans	Kidneybønner	Kidneybohnen	Kidneybönor	Kidneybønner
+baked_beans	legume	gos,fructan		Baked beans	Baked beans	Baked Beans	Bakade bönor	Bakte bønner
+soybeans	legume	gos		Soybeans	Sojabønner	Sojabohnen	Sojabönor	Soyabønner
+hummus	legume	gos,fructan		Hummus	Hummus	Hummus	Hummus	Hummus
+cashews	nut	gos,fructan		Cashew nuts	Cashewnødder	Cashewkerne	Cashewnötter	Cashewnøtter
+pistachios	nut	gos,fructan		Pistachios	Pistacienødder	Pistazien	Pistaschnötter	Pistasjnøtter
+almonds	nut	gos	p	Almonds	Mandler	Mandeln	Mandlar	Mandler
+hazelnuts	nut	gos,fructan	p	Hazelnuts	Hasselnødder	Haselnüsse	Hasselnötter	Hasselnøtter
+walnuts	nut			Walnuts	Valnødder	Walnüsse	Valnötter	Valnøtter
+peanuts	nut			Peanuts	Peanuts	Erdnüsse	Jordnötter	Peanøtter
+seeds	nut			Seeds (pumpkin, sunflower)	Kerner (græskar, solsikke)	Kerne (Kürbis, Sonnenblume)	Fröer (pumpa, solros)	Frø (gresskar, solsikke)
+coffee	drink			Coffee	Kaffe	Kaffee	Kaffe	Kaffe
+black_tea	drink			Black tea	Sort te	Schwarzer Tee	Svart te	Svart te
+peppermint_tea	drink			Peppermint tea	Pebermyntete	Pfefferminztee	Pepparmyntste	Peppermyntete
+chamomile_tea	drink	fructan		Chamomile tea	Kamillete	Kamillentee	Kamomillte	Kamillete
+fennel_tea	drink	fructan		Fennel tea	Fennikelte	Fencheltee	Fänkålste	Fenikkelte
+apple_juice	drink	fructose,sorbitol		Apple juice	Æblejuice	Apfelsaft	Äppeljuice	Eplejuice
+orange_juice	drink	fructose	p	Orange juice	Appelsinjuice	Orangensaft	Apelsinjuice	Appelsinjuice
+soft_drink_fructose	drink	fructose		Soft drink with fructose syrup	Sodavand med fruktosesirup	Limonade mit Fruktosesirup	Läsk med fruktossirap	Brus med fruktosesirup
+beer	drink			Beer	Øl	Bier	Öl	Øl
+wine	drink			Wine	Vin	Wein	Vin	Vin
+rum	drink	fructose		Rum	Rom	Rum	Rom	Rom
+almond_milk	drink			Almond drink	Mandeldrik	Mandeldrink	Mandeldryck	Mandeldrikk
+soy_milk_beans	drink	gos		Soy drink (from whole beans)	Sojadrik (af hele bønner)	Sojadrink (aus ganzen Bohnen)	Sojadryck (av hela bönor)	Soyadrikk (av hele bønner)
+honey	other	fructose		Honey	Honning	Honig	Honung	Honning
+agave	other	fructose		Agave syrup	Agavesirup	Agavendicksaft	Agavesirap	Agavesirup
+maple_syrup	other			Maple syrup	Ahornsirup	Ahornsirup	Lönnsirap	Lønnesirup
+sugar	other			Sugar	Sukker	Zucker	Socker	Sukker
+sugar_free_sweets	other	sorbitol,mannitol		Sugar-free gum or sweets	Sukkerfri tyggegummi eller slik	Zuckerfreier Kaugummi oder Süßigkeiten	Sockerfritt tuggummi eller godis	Sukkerfri tyggegummi eller godteri
+dark_chocolate	other		p	Dark chocolate	Mørk chokolade	Zartbitterschokolade	Mörk choklad	Mørk sjokolade
+milk_chocolate	other	lactose	p	Milk chocolate	Mælkechokolade	Vollmilchschokolade	Mjölkchoklad	Melkesjokolade
+inulin_bar	other	fructan		Fibre bar with inulin or chicory	Fiberbar med inulin eller cikorie	Ballaststoffriegel mit Inulin oder Zichorie	Fiberbar med inulin eller cikoria	Fiberbar med inulin eller sikori
+garlic_oil	other			Garlic-infused oil	Olie med hvidløgssmag	Knoblauchöl (aromatisiert)	Olja smaksatt med vitlök	Olje smakssatt med hvitløk
+olive_oil	other			Olive oil	Olivenolie	Olivenöl	Olivolja	Olivenolje
+ketchup	other	fructan	p	Ketchup	Ketchup	Ketchup	Ketchup	Ketchup
+soy_sauce	other			Soy sauce	Sojasauce	Sojasoße	Sojasås	Soyasaus
+stock_cube	other	fructan		Stock cube or bouillon	Bouillon	Brühwürfel	Buljongtärning	Buljongterning
+pizza	other	fructan,lactose		Pizza	Pizza	Pizza	Pizza	Pizza
+cake	other	fructan,lactose		Cake or pastry	Kage eller wienerbrød	Kuchen oder Gebäck	Kaka eller bakelse	Kake eller wienerbrød
+fatty_food	other			Fried or fatty food	Fed eller friturestegt mad	Frittiertes oder fettes Essen	Friterad eller fet mat	Fet eller frityrstekt mat
+spicy_food	other			Spicy food	Stærk mad	Scharfes Essen	Stark mat	Sterk mat

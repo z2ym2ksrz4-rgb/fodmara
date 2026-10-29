@@ -1,0 +1,544 @@
+{
+  "nav": {
+    "home": "Home",
+    "calendar": "Calendar",
+    "insights": "Insights",
+    "settings": "Settings"
+  },
+  "common": {
+    "add": "Add",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "done": "Done",
+    "other": "Other…",
+    "typeOwn": "Type your own",
+    "disclaimer": "Fodmara is a self-observation diary, not a medical device. It does not diagnose or give treatment advice. Talk to your doctor about what you log.",
+    "edit": "Edit",
+    "off": "Turn off",
+    "on": "Turn on",
+    "search": "Search"
+  },
+  "home": {
+    "title": "Fodmara",
+    "openSince": "Louder since {{time}}",
+    "tapToEdit": "Tap to end it or add details",
+    "recent": "Recent spikes",
+    "ongoing": "ongoing",
+    "empty": "No spikes logged. When it suddenly gets louder, tap Louder now.",
+    "checkinTitle": "Today",
+    "checkin": {
+      "none": "Calm day",
+      "mild": "Noticeable day",
+      "attack": "Hard day"
+    },
+    "fields": {
+      "sleep": "Sleep last night",
+      "stress": "Stress",
+      "loudness": "Loudness",
+      "distress": "Bother",
+      "noise": "Noise today"
+    },
+    "greeting": "Hi {{name}}",
+    "saveDay": "Save the day",
+    "savedDay": "Today is saved",
+    "periodToday": "Period today",
+    "periodShort": "period",
+    "periodHint": "Tap to mark today",
+    "todayIs": "Today: {{word}}",
+    "louderNow": "Louder now",
+    "louderHint": "Log a spike – details can wait",
+    "endSpike": "It has settled",
+    "weekTitle": "Last 7 days",
+    "avg7": "average loudness",
+    "vsLastWeek": "vs. the week before",
+    "spikesMonth_one": "spike this month",
+    "spikesMonth_other": "spikes this month",
+    "sparkEmpty": "Check in for a couple of days and your curve appears here.",
+    "fieldHint": {
+      "distress": "1 not at all · 5 a lot",
+      "sleep": "1 bad · 5 good",
+      "stress": "1 calm · 5 very",
+      "noise": "1 quiet · 5 very loud"
+    }
+  },
+  "episode": {
+    "title": "Spike",
+    "ongoing": "Louder right now",
+    "start": "Start",
+    "end": "End",
+    "duration": "{{h}} h",
+    "intensity": "Peak loudness",
+    "mildLbl": "a bit louder",
+    "severeLbl": "very loud",
+    "note": "Note",
+    "notePh": "Anything else worth remembering",
+    "deleteConfirm": "Delete this spike?",
+    "quickIntro": "Logged. Everything else can wait until it has settled.",
+    "howBad": "How loud is it right now?",
+    "level": {
+      "mild": "A bit louder",
+      "moderate": "Much louder",
+      "severe": "Very loud"
+    },
+    "laterLink": "Fill in later",
+    "journey": {
+      "trigger": "What do you think set it off?",
+      "symptom": "What else did you notice?",
+      "meds": "Did you take or use anything?",
+      "note": "Anything to remember?",
+      "relief": "What helped?",
+      "sound": "How does it sound?"
+    },
+    "more": "{{n}} more…",
+    "skip": "Skip",
+    "editAll": "Edit all details",
+    "doneTitle": "Logged",
+    "tagsCount": "tags",
+    "cmpTitle": "This spike vs. your average",
+    "cmpThis": "This spike",
+    "cmpAvg": "Average of {{n}} spikes",
+    "cmpNeedMore": "Log a couple more spikes and this will show how this one compares to your average.",
+    "cmpLocked": "Pro shows how this spike compares to your average.",
+    "liveHint": "When it settles, a few short questions follow – answer what you can.",
+    "howBadNow": "How loud is it right now?"
+  },
+  "calendar": {
+    "spike": "Spike",
+    "loudness": "Loudness {{n}} – {{word}}",
+    "noCheckin": "No check-in this day."
+  },
+  "meds": {
+    "title": "Medication & aids",
+    "sub": "Your own medicines, supplements and aids (for example a hearing aid or sound generator), by name. Fodmara never suggests treatment or doses.",
+    "name": "Name",
+    "namePh": "e.g. Melatonin or Sound generator",
+    "acute": "As needed",
+    "preventive": "Regular",
+    "acuteHint": "Log what you used during a spike in the spike's last steps.",
+    "addFirst": "Add medication or aid",
+    "show": "Show",
+    "hide": "Hide"
+  },
+  "insights": {
+    "title": "Insights",
+    "lockedTitle": "Your curve needs Pro",
+    "lockedBody": "Loudness over 90 days and per month, how sleep, stress and noise line up with louder days, which triggers come up – plus the PDF report for your doctor.",
+    "range": {
+      "month": "This month",
+      "3m": "3 months",
+      "12m": "12 months"
+    },
+    "noData": "Not enough data yet.",
+    "disclaimer": "Averages and shares are simple counts of what you logged, not evidence of cause.",
+    "patterns": "Your patterns",
+    "patWeekday": "{{pct}}% of your spikes started on a {{day}}",
+    "patTime": "{{pct}}% of your spikes started in the {{part}}",
+    "part": {
+      "night": "night",
+      "morning": "morning",
+      "afternoon": "afternoon",
+      "evening": "evening"
+    },
+    "patPeriod": "{{pct}}% of your spikes started within a day of your period",
+    "patBasis": "Based on {{n}} spikes in the last 6 months",
+    "patNote": "Patterns describe your log – they do not prove a cause. Bring them to your doctor.",
+    "patNeed": "Patterns appear after about two weeks of daily check-ins.",
+    "patPressure": "{{pct}}% of your spikes started on a day with falling air pressure (≥{{hpa}} hPa) – against {{all}}% of all days.",
+    "learnTitle": "What it looks like",
+    "learnNote": "Observations from your own log, in plain words. They describe – they do not explain.",
+    "learnEmpty": "After a couple of weeks of check-ins, this sums up what stands out in plain words.",
+    "loud90": "Loudness, last 90 days",
+    "loud90Hint": "Dots = your daily check-ins · line = 7-day average",
+    "monthly": "Average loudness per month",
+    "avgLoud": "avg. loudness (0–10)",
+    "avgDistress": "avg. bother (1–5)",
+    "hardDays": "hard days (7+) of {{n}} logged",
+    "spikes": "Spikes",
+    "avgSpikeHours": "avg. hours per spike",
+    "shareOfSpikes": "share of spikes",
+    "contrast": {
+      "sleep": "After good nights (4–5) your tinnitus averaged {{hi}} – after poor nights (1–2) {{lo}}",
+      "stress": "On stressful days (4–5) it averaged {{hi}} – on calm days (1–2) {{lo}}",
+      "noise": "The day after a loud day (4–5) it averaged {{hi}} – after quiet days (1–2) {{lo}}"
+    },
+    "contrastBasis": "Based on {{hi}} and {{lo}} days in the last 6 months"
+  },
+  "report": {
+    "title": "Tinnitus diary report",
+    "cta": "PDF report",
+    "sub": "A one-page overview, loudness week by week and one row per spike – formatted for your doctor or ENT.",
+    "preset": {
+      "month": "This month",
+      "last": "Last month",
+      "3m": "Last 3 months",
+      "custom": "Choose dates"
+    },
+    "from": "From",
+    "to": "To",
+    "make": "Create PDF",
+    "hours": "Hours",
+    "count": "Count (share)",
+    "footer": "Created with {{app}} — a self-observation diary, not a medical device",
+    "chartTitle": "Loudness per week",
+    "notesTitle": "Notes for the doctor",
+    "notesPh": "Questions, changes in hearing, medication or aids, anything else…",
+    "pressureCol": "hPa (Δ)",
+    "pressureNote": "hPa = daily mean air pressure for your place, Δ = change from the day before.",
+    "daysLogged": "Days logged",
+    "hardDays": "Hard days (loudness 7+)",
+    "spikes": "Spikes",
+    "peakShort": "Peak",
+    "legendLoud": "Average loudness (0–10)",
+    "legendSpikes": "Spikes that week",
+    "weeks": "Week by week",
+    "week": "Week of",
+    "loudShort": "Loud.",
+    "distressShort": "Bother",
+    "daysShort": "Days",
+    "scaleNote": "Loudness 0–10; bother, sleep, stress and noise 1–5 (sleep: 5 = good).",
+    "helped": "Helped / used"
+  },
+  "notif": {
+    "checkinTitle": "How loud is it today?",
+    "checkinBody": "A 5-second check-in keeps your curve complete.",
+    "openTitle": "Has it settled?",
+    "openBody": "A spike has been open for 12 hours. Tap to set when it ended.",
+    "actionEnd": "Settled now",
+    "actionContinue": "Still loud"
+  },
+  "lock": {
+    "title": "Enter PIN",
+    "hint": "Your diary is locked. Enter your 4–6 digit PIN."
+  },
+  "settings": {
+    "language": "Language",
+    "privacy": "Privacy",
+    "privacyPolicy": "Privacy policy",
+    "support": "Support",
+    "diary": "Diary",
+    "manage": "Manage",
+    "reminders": "Reminders",
+    "checkinReminder": "Daily check-in reminder",
+    "reminderTime": "Time",
+    "openEpisodeReminder": "Remind me if a spike stays open for 12 h",
+    "pin": "PIN lock",
+    "pinOn": "On — asked after 1 minute in the background",
+    "pinOff": "Off",
+    "pinSetup": "Set PIN",
+    "pinRemove": "Remove",
+    "pinRemoved": "PIN removed",
+    "pinSet": "PIN set",
+    "pinNew": "New PIN (4–6 digits)",
+    "pinRepeat": "Repeat PIN",
+    "pinMismatch": "PINs do not match",
+    "pinHint": "There is no way to recover a forgotten PIN — only deleting all data unlocks the app.",
+    "data": "Your data",
+    "dataNote": "Everything stays on this phone. The backup file is encrypted with your passphrase and shared by you — never uploaded by us.",
+    "about": "About",
+    "feedback": "Send feedback",
+    "restored": "Purchases restored",
+    "proThanks": "Thank you for supporting Fodmara.",
+    "freeHint": "Unlimited logging. Pro adds your curve, patterns, the PDF report and the PIN lock.",
+    "profile": "Profile",
+    "whatIsThis": "What is this?",
+    "cycleTracking": "Track menstrual cycle",
+    "cycleHint": "Adds a \"period today\" chip to the check-in and shows the share of spikes around your period.",
+    "widget": "Widget",
+    "planLifetime": "Lifetime – no renewal",
+    "planYearly": "Yearly · renews {{date}}",
+    "planTrial": "Free trial until {{date}}",
+    "planRenews": "Renews on {{date}}",
+    "planEnds": "Ends on {{date}}",
+    "switchLifetime": "Switch to lifetime",
+    "switchLifetimeHint": "Buy lifetime once, then cancel the yearly plan under Manage subscription – the store does not switch automatically.",
+    "manageSub": "Manage subscription",
+    "planStore": "Purchased via {{store}}",
+    "triggers": "Triggers"
+  },
+  "backup": {
+    "export": "Export encrypted backup",
+    "import": "Import backup",
+    "passphrase": "Choose a passphrase for the backup file",
+    "passphraseShort": "Passphrase",
+    "file": "Backup file",
+    "importHint": "Newest entry wins when the same entry exists on both phones.",
+    "wrongApp": "This backup belongs to another app",
+    "exported": "Backup exported",
+    "imported": "Backup imported",
+    "importFailed": "Could not import — wrong passphrase or file?",
+    "wipe": "Delete all data",
+    "wipeConfirm": "This permanently deletes everything stored in the app on this device. Exported backup files are not affected. Continue?",
+    "wiped": "All data deleted"
+  },
+  "plan": {
+    "free": "Free",
+    "pro": "Fodmara Pro",
+    "upgrade": "Upgrade"
+  },
+  "paywall": {
+    "title": "See what makes it louder",
+    "benefits": [
+      "Your loudness curve over weeks and months",
+      "How sleep, stress and noise line up with louder days",
+      "PDF report your doctor or ENT can read in a minute",
+      "PIN lock, encrypted backup and unlimited history"
+    ],
+    "plan": {
+      "annual": "Yearly",
+      "lifetime": "Lifetime"
+    },
+    "trial": "7 days free, then yearly",
+    "ctaTrial": "Start free trial",
+    "ctaBuy": "Buy once",
+    "legal": "Cancel anytime in your store account. Logging stays free forever.",
+    "restore": "Restore purchases",
+    "terms": "Terms",
+    "reasons": {
+      "insights": "Your curve and the report are part of Pro.",
+      "history": "Free shows the last 90 days. Pro keeps everything.",
+      "pin": "The PIN lock is part of Pro.",
+      "backup": "Backup and import are part of Pro.",
+      "onboarding": "",
+      "settings": "",
+      "weather": "Air pressure tracking is part of Pro.",
+      "cycle": "Cycle tracking is part of Pro."
+    }
+  },
+  "onboarding": {
+    "steps": [
+      {
+        "title": "One number a day",
+        "body": "How loud was it today, 0–10? Five seconds in the evening. Over weeks, that number becomes a curve you can actually show someone."
+      },
+      {
+        "title": "Louder now",
+        "body": "When it suddenly spikes, one tap logs it. How it sounds, what set it off and what helped can wait."
+      },
+      {
+        "title": "Private by design",
+        "body": "No account, no cloud, no tracking. Your diary lives on this phone, and only you can export it."
+      }
+    ],
+    "next": "Next",
+    "skip": "Skip",
+    "start": "Get started",
+    "welcome": "Welcome to Fodmara",
+    "welcomeBody": "Choose your language and tell us what to call you.",
+    "name": "First name",
+    "namePh": "Your first name (optional)",
+    "setupTitle": "About your tinnitus {{name}}",
+    "widgetTitle": "One tap from the home screen",
+    "widgetBody": "The widget logs a spike without opening the app and shows today's number and your 7-day average.",
+    "widgetLater": "You can add it later: Settings → Widget → Add.",
+    "extrasTitle": "Extras",
+    "extrasBody": "Optional. Both are part of Pro – they switch on the moment you start the free trial.",
+    "extrasNote": "You can change all of this in Settings at any time.",
+    "setupBody": "Optional – it is printed at the top of your report so your doctor sees the basics.",
+    "sinceQ": "How long have you had it?",
+    "sinceQShort": "Since",
+    "since": {
+      "lt3m": "Less than 3 months",
+      "3to12m": "3–12 months",
+      "1to5y": "1–5 years",
+      "gt5y": "More than 5 years"
+    },
+    "sideQ": "Where do you hear it?",
+    "soundQ": "How does it usually sound?",
+    "newHint": "New tinnitus is worth having checked by a doctor – especially together with a change in hearing."
+  },
+  "lang": {
+    "en": "English",
+    "da": "Dansk",
+    "de": "Deutsch",
+    "sv": "Svenska",
+    "nb": "Norsk"
+  },
+  "diary": {
+    "groups": {
+      "trigger": "Triggers",
+      "symptom": "Also noticed",
+      "relief": "What helped",
+      "location": "Where",
+      "sound": "Sound"
+    },
+    "tags": {
+      "trigger": {
+        "loud_noise": "Loud noise",
+        "headphones": "Headphones",
+        "concert": "Concert / party",
+        "quiet_room": "Very quiet room",
+        "stress": "Stress",
+        "poor_sleep": "Poor sleep",
+        "caffeine": "Caffeine",
+        "alcohol": "Alcohol",
+        "salt": "Salty food",
+        "nicotine": "Nicotine",
+        "jaw_clench": "Jaw clenching",
+        "neck_tension": "Neck tension",
+        "cold_illness": "Cold / illness",
+        "flight_pressure": "Flight / pressure change",
+        "medication_change": "Medication change",
+        "fatigue": "Tiredness",
+        "exertion": "Physical exertion"
+      },
+      "sound": {
+        "ringing": "Ringing",
+        "whistling": "Whistling",
+        "hissing": "Hissing",
+        "buzzing": "Buzzing",
+        "humming": "Humming",
+        "roaring": "Roaring",
+        "pulsing": "Pulsing",
+        "clicking": "Clicking",
+        "several": "Several sounds"
+      },
+      "location": {
+        "left": "Left ear",
+        "right": "Right ear",
+        "both": "Both ears",
+        "in_head": "Inside the head"
+      },
+      "symptom": {
+        "hyperacusis": "Sound sensitivity",
+        "ear_fullness": "Ear feels full",
+        "muffled_hearing": "Muffled hearing",
+        "dizziness": "Dizziness",
+        "headache": "Headache",
+        "jaw_pain": "Jaw pain",
+        "neck_pain": "Neck pain",
+        "concentration": "Hard to concentrate",
+        "sleep_trouble": "Trouble sleeping",
+        "anxiety": "Worry / anxiety",
+        "irritability": "Irritability",
+        "fatigue": "Exhaustion"
+      },
+      "relief": {
+        "masking": "Masking sound",
+        "nature_sounds": "Nature sounds",
+        "music": "Music",
+        "distraction": "Distraction",
+        "relaxation": "Relaxation",
+        "breathing": "Breathing exercise",
+        "exercise": "Exercise",
+        "sleep": "Sleep",
+        "hearing_aid": "Hearing aid",
+        "fresh_air": "Fresh air",
+        "talking": "Talking to someone"
+      }
+    }
+  },
+  "widget": {
+    "title": "Louder now widget",
+    "ongoing": "Louder right now",
+    "noData": "No check-ins yet",
+    "settingsHint": "Log a spike from the Home Screen or Lock Screen",
+    "guideBtn": "Add",
+    "previewLine1": "Today: 3/10",
+    "previewLine2": "7-day avg. 3.4 · 2 spikes this month",
+    "intro": "One tap on the widget logs a spike – no need to find the app first.",
+    "stepsIos": [
+      "Touch and hold an empty spot on your Home Screen until the apps jiggle.",
+      "Tap + (top left) and search for Fodmara.",
+      "Choose the small or medium widget and tap Add Widget."
+    ],
+    "stepsAndroid": [
+      "Touch and hold an empty spot on your home screen.",
+      "Tap Widgets and find Fodmara.",
+      "Drag the widget onto your home screen."
+    ],
+    "lockscreen": "Lock Screen: touch and hold the Lock Screen → Customize → tap the widget area → Fodmara.",
+    "louderNow": "Louder now",
+    "openSpike": "Spike ongoing",
+    "notLogged": "Today not logged yet",
+    "today": "Today: {{n}}/10",
+    "avg7": "7-day avg. {{n}}",
+    "spikes_one": "{{count}} spike this month",
+    "spikes_other": "{{count}} spikes this month"
+  },
+  "weather": {
+    "title": "Air pressure",
+    "hint": "Track daily air pressure for your place – no location access needed.",
+    "choose": "Choose place",
+    "changePlace": "Change place",
+    "on": "On · {{place}}",
+    "off": "Air pressure tracking turned off",
+    "pickTitle": "Your place",
+    "pickHint": "Type a city or town. Only its coordinates are sent to the weather service (Open-Meteo) – never your device location.",
+    "placePh": "City, e.g. Viborg",
+    "searchFailed": "Search failed – check your connection",
+    "privacy": "Open-Meteo is a free, open weather service without accounts or tracking. The pressure history is stored on your device only.",
+    "pressureNow": "Air pressure {{p}} hPa",
+    "noData": "Fetching air pressure…",
+    "falling": "Falling {{d}} hPa since yesterday",
+    "rising": "Rising {{d}} hPa since yesterday",
+    "stable": "Steady since yesterday",
+    "whatIsIt": "What does it mean?",
+    "infoTitle": "About air pressure",
+    "infoWhat": "Air pressure (hPa) is the weight of the atmosphere. Around 1013 hPa is average; rising pressure usually means settled weather, falling pressure means a front is coming.",
+    "infoWhy": "Some people with tinnitus – especially with Ménière's disease or ear-pressure problems – notice changes when the air pressure shifts. Evidence is limited and it differs from person to person; the change matters more than the absolute value.",
+    "infoApp": "Fodmara stores the daily mean for your place and compares the days your spikes started with all other days. The pattern card and the report show that comparison – nothing more.",
+    "infoDisclaimer": "This is a description of your own log, not a medical statement. Talk to your doctor about what it means for you."
+  },
+  "learn": {
+    "weekday": "{{pct}}% of your spikes started on a {{day}}.",
+    "time": "Your spikes most often start in the {{part}} ({{pct}}%).",
+    "period": "{{pct}}% of your spikes started within a day of your period.",
+    "pressureYes": "{{pct}}% of your spikes started on a day the air pressure fell at least {{hpa}} hPa – only {{all}}% of all days had such a drop.",
+    "pressureNo": "Falling air pressure does not stand out: {{pct}}% of your spikes started on a falling-pressure day, about the same as all days ({{all}}%).",
+    "trigger": "\"{{tag}}\" is the trigger you log most often – on {{pct}}% of spikes.",
+    "trendDown": "Over the last 30 days your tinnitus averaged {{now}} – down from {{before}} in the 30 days before.",
+    "trendUp": "Over the last 30 days your tinnitus averaged {{now}} – up from {{before}} in the 30 days before.",
+    "trendSame": "Over the last 30 days your tinnitus averaged {{now}} – about the same as the 30 days before ({{before}}).",
+    "contrast": {
+      "sleep": "After good nights it averaged {{hi}}, after poor nights {{lo}}.",
+      "stress": "On stressful days it averaged {{hi}}, on calm days {{lo}}.",
+      "noise": "The day after a loud day it averaged {{hi}}, after quiet days {{lo}}."
+    },
+    "relief": "\"{{tag}}\" helped on {{pct}}% of your spikes."
+  },
+  "loud": {
+    "question": "How loud is your tinnitus today?",
+    "pick": "Tap a number",
+    "min": "0 · not noticeable",
+    "max": "10 · as loud as it gets",
+    "level": {
+      "silent": "Not noticeable",
+      "low": "Faint",
+      "noticeable": "Noticeable",
+      "loud": "Loud",
+      "veryLoud": "Very loud"
+    },
+    "infoTitle": "About the 0–10 scale",
+    "infoWhat": "Rate how loud the tinnitus was for most of the day – not the worst moment (that is what Louder now is for). The number is yours: compare it with your own days, not with other people.",
+    "infoScale": [
+      "0 – you don't notice it",
+      "1–3 – there if you listen for it",
+      "4–6 – noticeable, but you can tune it out",
+      "7–8 – loud and hard to ignore",
+      "9–10 – as loud as it ever gets"
+    ],
+    "infoTip": "Check in at about the same time every day, for example in the evening. Bother is logged separately because how much it gets to you often changes more than the loudness itself."
+  },
+  "redFlags": {
+    "link": "When should I see a doctor quickly?",
+    "title": "When to see a doctor quickly",
+    "intro": "Most tinnitus is harmless in itself. A few situations need a doctor fast:",
+    "urgentTitle": "Same day – or call emergency services",
+    "urgent": [
+      "Your hearing suddenly drops in one ear (within hours or a few days). Sudden hearing loss is treated best within days.",
+      "Tinnitus comes with sudden severe dizziness, facial weakness, double vision or trouble speaking.",
+      "It started after a blow to the head."
+    ],
+    "soonTitle": "Book an appointment soon",
+    "soon": [
+      "It is only in one ear and does not go away.",
+      "It pulses in time with your heartbeat.",
+      "It comes with ear pain, discharge or a blocked ear that does not clear.",
+      "It is new and has not been checked.",
+      "It is hurting your sleep, mood or work – help is available."
+    ],
+    "routine": "Long-standing tinnitus that has been checked is usually not dangerous. Sound therapy, hearing aids and CBT-based programmes are available through your doctor or an ENT specialist.",
+    "disclaimer": "General information, not a diagnosis. If in doubt, call your doctor."
+  }
+}

@@ -1,0 +1,544 @@
+{
+  "nav": {
+    "home": "Hjem",
+    "calendar": "Kalender",
+    "insights": "Indsigt",
+    "settings": "Indstillinger"
+  },
+  "common": {
+    "add": "Tilføj",
+    "cancel": "Annuller",
+    "save": "Gem",
+    "delete": "Slet",
+    "done": "Færdig",
+    "other": "Anden…",
+    "typeOwn": "Skriv din egen",
+    "disclaimer": "Fodmara er en selvobservations-dagbog, ikke medicinsk udstyr. Den stiller ikke diagnoser og giver ikke behandlingsråd. Tal med din læge om det, du logger.",
+    "edit": "Ret",
+    "off": "Slå fra",
+    "on": "Slå til",
+    "search": "Søg"
+  },
+  "home": {
+    "title": "Fodmara",
+    "openSince": "Højere siden {{time}}",
+    "tapToEdit": "Tryk for at afslutte eller tilføje detaljer",
+    "recent": "Seneste udbrud",
+    "ongoing": "i gang",
+    "empty": "Ingen udbrud logget. Når den pludselig bliver højere, så tryk Højere nu.",
+    "checkinTitle": "I dag",
+    "checkin": {
+      "none": "Rolig dag",
+      "mild": "Mærkbar dag",
+      "attack": "Hård dag"
+    },
+    "fields": {
+      "sleep": "Søvn i nat",
+      "stress": "Stress",
+      "loudness": "Lydstyrke",
+      "distress": "Gene",
+      "noise": "Støj i dag"
+    },
+    "greeting": "Hej {{name}}",
+    "saveDay": "Gem dagen",
+    "savedDay": "Dagen er gemt",
+    "periodToday": "Menstruation i dag",
+    "periodShort": "menstruation",
+    "periodHint": "Tryk for at markere i dag",
+    "todayIs": "I dag: {{word}}",
+    "louderNow": "Højere nu",
+    "louderHint": "Log et udbrud – detaljer kan vente",
+    "endSpike": "Det har lagt sig",
+    "weekTitle": "Sidste 7 dage",
+    "avg7": "gns. lydstyrke",
+    "vsLastWeek": "mod ugen før",
+    "spikesMonth_one": "udbrud denne måned",
+    "spikesMonth_other": "udbrud denne måned",
+    "sparkEmpty": "Tjek ind et par dage, så dukker din kurve op her.",
+    "fieldHint": {
+      "distress": "1 slet ikke · 5 meget",
+      "sleep": "1 dårlig · 5 god",
+      "stress": "1 rolig · 5 meget",
+      "noise": "1 stille · 5 meget højt"
+    }
+  },
+  "episode": {
+    "title": "Udbrud",
+    "ongoing": "Højere lige nu",
+    "start": "Start",
+    "end": "Slut",
+    "duration": "{{h}} t",
+    "intensity": "Højeste lydstyrke",
+    "mildLbl": "lidt højere",
+    "severeLbl": "meget høj",
+    "note": "Note",
+    "notePh": "Andet, der er værd at huske",
+    "deleteConfirm": "Slet dette udbrud?",
+    "quickIntro": "Logget. Resten kan vente, til det har lagt sig.",
+    "howBad": "Hvor høj er den lige nu?",
+    "level": {
+      "mild": "Lidt højere",
+      "moderate": "Meget højere",
+      "severe": "Ekstremt høj"
+    },
+    "laterLink": "Udfyld senere",
+    "journey": {
+      "trigger": "Hvad tror du satte det i gang?",
+      "symptom": "Hvad lagde du ellers mærke til?",
+      "meds": "Tog eller brugte du noget?",
+      "note": "Noget at huske?",
+      "relief": "Hvad hjalp?",
+      "sound": "Hvordan lyder den?"
+    },
+    "more": "{{n}} flere…",
+    "skip": "Spring over",
+    "editAll": "Ret alle detaljer",
+    "doneTitle": "Logget",
+    "tagsCount": "markeringer",
+    "cmpTitle": "Dette udbrud mod dit gennemsnit",
+    "cmpThis": "Dette udbrud",
+    "cmpAvg": "Gennemsnit af {{n}} udbrud",
+    "cmpNeedMore": "Log et par udbrud mere, så viser den, hvordan dette ligger i forhold til dit gennemsnit.",
+    "cmpLocked": "Pro viser, hvordan dette udbrud ligger i forhold til dit gennemsnit.",
+    "liveHint": "Når det har lagt sig, kommer et par korte spørgsmål – svar på det, du kan.",
+    "howBadNow": "Hvor høj er den lige nu?"
+  },
+  "calendar": {
+    "spike": "Udbrud",
+    "loudness": "Lydstyrke {{n}} – {{word}}",
+    "noCheckin": "Ingen check-in denne dag."
+  },
+  "meds": {
+    "title": "Medicin og hjælpemidler",
+    "sub": "Din egen medicin, kosttilskud og hjælpemidler (fx høreapparat eller lydgenerator) med navn. Fodmara foreslår aldrig behandling eller doser.",
+    "name": "Navn",
+    "namePh": "fx Melatonin eller Lydgenerator",
+    "acute": "Efter behov",
+    "preventive": "Fast",
+    "acuteHint": "Log det, du brugte under et udbrud, i udbruddets sidste trin.",
+    "addFirst": "Tilføj medicin eller hjælpemiddel",
+    "show": "Vis",
+    "hide": "Skjul"
+  },
+  "insights": {
+    "title": "Indsigt",
+    "lockedTitle": "Din kurve kræver Pro",
+    "lockedBody": "Lydstyrken over 90 dage og pr. måned, hvordan søvn, stress og støj hænger sammen med højere dage, hvilke triggere der går igen – plus PDF-rapporten til lægen.",
+    "range": {
+      "month": "Denne måned",
+      "3m": "3 måneder",
+      "12m": "12 måneder"
+    },
+    "noData": "Ikke nok data endnu.",
+    "disclaimer": "Gennemsnit og andele er simple optællinger af det, du har logget – ikke bevis for årsager.",
+    "patterns": "Dine mønstre",
+    "patWeekday": "{{pct}} % af dine udbrud startede en {{day}}",
+    "patTime": "{{pct}} % af dine udbrud startede om {{part}}",
+    "part": {
+      "night": "natten",
+      "morning": "morgenen",
+      "afternoon": "eftermiddagen",
+      "evening": "aftenen"
+    },
+    "patPeriod": "{{pct}} % af dine udbrud startede inden for en dag fra din menstruation",
+    "patBasis": "Baseret på {{n}} udbrud de sidste 6 måneder",
+    "patNote": "Mønstre beskriver din log – de beviser ikke en årsag. Tag dem med til lægen.",
+    "patNeed": "Mønstre dukker op efter cirka to ugers daglige check-ins.",
+    "patPressure": "{{pct}} % af dine udbrud startede på en dag med faldende lufttryk (≥{{hpa}} hPa) – mod {{all}} % af alle dage.",
+    "learnTitle": "Sådan ser det ud",
+    "learnNote": "Observationer fra din egen dagbog i almindelige ord. De beskriver – de forklarer ikke.",
+    "learnEmpty": "Efter et par ugers check-ins opsummerer den her med almindelige ord, hvad der skiller sig ud.",
+    "loud90": "Lydstyrke, sidste 90 dage",
+    "loud90Hint": "Prikker = dine daglige check-ins · linje = 7-dages gennemsnit",
+    "monthly": "Gennemsnitlig lydstyrke pr. måned",
+    "avgLoud": "gns. lydstyrke (0–10)",
+    "avgDistress": "gns. gene (1–5)",
+    "hardDays": "hårde dage (7+) af {{n}} loggede",
+    "spikes": "Udbrud",
+    "avgSpikeHours": "gns. timer pr. udbrud",
+    "shareOfSpikes": "andel af udbrud",
+    "contrast": {
+      "sleep": "Efter gode nætter (4–5) lå din tinnitus i gennemsnit på {{hi}} – efter dårlige nætter (1–2) på {{lo}}",
+      "stress": "På stressede dage (4–5) lå den på {{hi}} – på rolige dage (1–2) på {{lo}}",
+      "noise": "Dagen efter en støjende dag (4–5) lå den på {{hi}} – efter stille dage (1–2) på {{lo}}"
+    },
+    "contrastBasis": "Baseret på {{hi}} og {{lo}} dage de sidste 6 måneder"
+  },
+  "report": {
+    "title": "Tinnitusdagbog – rapport",
+    "cta": "PDF-rapport",
+    "sub": "Overblik på én side, lydstyrken uge for uge og én linje pr. udbrud – sat op til lægen eller øre-næse-hals-lægen.",
+    "preset": {
+      "month": "Denne måned",
+      "last": "Sidste måned",
+      "3m": "Seneste 3 måneder",
+      "custom": "Vælg datoer"
+    },
+    "from": "Fra",
+    "to": "Til",
+    "make": "Lav PDF",
+    "hours": "Timer",
+    "count": "Antal (andel)",
+    "footer": "Lavet med {{app}} – en selvobservations-dagbog, ikke medicinsk udstyr",
+    "chartTitle": "Lydstyrke pr. uge",
+    "notesTitle": "Noter til lægen",
+    "notesPh": "Spørgsmål, ændringer i hørelsen, medicin eller hjælpemidler, andet…",
+    "pressureCol": "hPa (Δ)",
+    "pressureNote": "hPa = dagsmiddel for lufttryk på dit sted, Δ = ændring fra dagen før.",
+    "daysLogged": "Loggede dage",
+    "hardDays": "Hårde dage (lydstyrke 7+)",
+    "spikes": "Udbrud",
+    "peakShort": "Top",
+    "legendLoud": "Gennemsnitlig lydstyrke (0–10)",
+    "legendSpikes": "Udbrud den uge",
+    "weeks": "Uge for uge",
+    "week": "Uge fra",
+    "loudShort": "Lyd",
+    "distressShort": "Gene",
+    "daysShort": "Dage",
+    "scaleNote": "Lydstyrke 0–10; gene, søvn, stress og støj 1–5 (søvn: 5 = god).",
+    "helped": "Hjalp / brugt"
+  },
+  "notif": {
+    "checkinTitle": "Hvor høj er den i dag?",
+    "checkinBody": "Et check-in på 5 sekunder holder din kurve komplet.",
+    "openTitle": "Har det lagt sig?",
+    "openBody": "Et udbrud har stået åbent i 12 timer. Tryk for at sætte sluttidspunktet.",
+    "actionEnd": "Lagt sig nu",
+    "actionContinue": "Stadig højt"
+  },
+  "lock": {
+    "title": "Indtast PIN",
+    "hint": "Din dagbog er låst. Indtast din PIN på 4–6 cifre."
+  },
+  "settings": {
+    "language": "Sprog",
+    "privacy": "Privatliv",
+    "privacyPolicy": "Privatlivspolitik",
+    "support": "Support",
+    "diary": "Dagbog",
+    "manage": "Administrér",
+    "reminders": "Påmindelser",
+    "checkinReminder": "Daglig check-in-påmindelse",
+    "reminderTime": "Tidspunkt",
+    "openEpisodeReminder": "Påmind mig, hvis et udbrud står åbent i 12 timer",
+    "pin": "PIN-lås",
+    "pinOn": "Til – spørger efter 1 minut i baggrunden",
+    "pinOff": "Fra",
+    "pinSetup": "Sæt PIN",
+    "pinRemove": "Fjern",
+    "pinRemoved": "PIN fjernet",
+    "pinSet": "PIN sat",
+    "pinNew": "Ny PIN (4–6 cifre)",
+    "pinRepeat": "Gentag PIN",
+    "pinMismatch": "PIN-koderne er ikke ens",
+    "pinHint": "En glemt PIN kan ikke gendannes – kun sletning af alle data låser appen op.",
+    "data": "Dine data",
+    "dataNote": "Alt bliver på denne telefon. Backup-filen er krypteret med din adgangssætning og deles af dig selv – vi uploader aldrig noget.",
+    "about": "Om",
+    "feedback": "Send feedback",
+    "restored": "Køb gendannet",
+    "proThanks": "Tak fordi du støtter Fodmara.",
+    "freeHint": "Ubegrænset logning. Pro giver din kurve, mønstre, PDF-rapporten og PIN-lås.",
+    "profile": "Profil",
+    "whatIsThis": "Hvad er det?",
+    "cycleTracking": "Registrér menstruationscyklus",
+    "cycleHint": "Tilføjer \"menstruation i dag\" til check-in og viser andelen af udbrud omkring din menstruation.",
+    "widget": "Widget",
+    "planLifetime": "Livstid – fornyes ikke",
+    "planYearly": "Årligt · fornyes {{date}}",
+    "planTrial": "Gratis prøve indtil {{date}}",
+    "planRenews": "Fornyes {{date}}",
+    "planEnds": "Udløber {{date}}",
+    "switchLifetime": "Skift til livstid",
+    "switchLifetimeHint": "Køb livstid én gang, og opsig derefter årsplanen under Administrér abonnement – butikken skifter ikke automatisk.",
+    "manageSub": "Administrér abonnement",
+    "planStore": "Købt via {{store}}",
+    "triggers": "Triggere"
+  },
+  "backup": {
+    "export": "Eksportér krypteret backup",
+    "import": "Importér backup",
+    "passphrase": "Vælg en adgangssætning til backup-filen",
+    "passphraseShort": "Adgangssætning",
+    "file": "Backup-fil",
+    "importHint": "Nyeste version vinder, når samme registrering findes på begge telefoner.",
+    "wrongApp": "Denne backup tilhører en anden app",
+    "exported": "Backup eksporteret",
+    "imported": "Backup importeret",
+    "importFailed": "Kunne ikke importere – forkert adgangssætning eller fil?",
+    "wipe": "Slet alle data",
+    "wipeConfirm": "Dette sletter permanent alt, der er gemt i appen på denne enhed. Eksporterede backup-filer påvirkes ikke. Fortsæt?",
+    "wiped": "Alle data slettet"
+  },
+  "plan": {
+    "free": "Gratis",
+    "pro": "Fodmara Pro",
+    "upgrade": "Opgradér"
+  },
+  "paywall": {
+    "title": "Se hvad der gør den højere",
+    "benefits": [
+      "Din lydstyrke-kurve over uger og måneder",
+      "Hvordan søvn, stress og støj hænger sammen med højere dage",
+      "PDF-rapport, lægen kan læse på et minut",
+      "PIN-lås, krypteret backup og ubegrænset historik"
+    ],
+    "plan": {
+      "annual": "Årligt",
+      "lifetime": "Livstid"
+    },
+    "trial": "7 dage gratis, derefter årligt",
+    "ctaTrial": "Start gratis prøve",
+    "ctaBuy": "Køb én gang",
+    "legal": "Opsig når som helst i din butikskonto. Logning er gratis for altid.",
+    "restore": "Gendan køb",
+    "terms": "Vilkår",
+    "reasons": {
+      "insights": "Din kurve og rapporten er en del af Pro.",
+      "history": "Gratis viser de seneste 90 dage. Pro gemmer alt.",
+      "pin": "PIN-låsen er en del af Pro.",
+      "backup": "Backup og import er en del af Pro.",
+      "onboarding": "",
+      "settings": "",
+      "weather": "Lufttryk er en del af Pro.",
+      "cycle": "Cyklussporing er en del af Pro."
+    }
+  },
+  "onboarding": {
+    "steps": [
+      {
+        "title": "Ét tal om dagen",
+        "body": "Hvor høj var den i dag, 0–10? Fem sekunder om aftenen. Over uger bliver det tal til en kurve, du rent faktisk kan vise nogen."
+      },
+      {
+        "title": "Højere nu",
+        "body": "Når den pludselig blusser op, logger ét tryk det. Hvordan den lyder, hvad der satte det i gang, og hvad der hjalp, kan vente."
+      },
+      {
+        "title": "Privat fra start",
+        "body": "Ingen konto, ingen sky, ingen sporing. Din dagbog ligger på denne telefon, og kun du kan eksportere den."
+      }
+    ],
+    "next": "Næste",
+    "skip": "Spring over",
+    "start": "Kom i gang",
+    "welcome": "Velkommen til Fodmara",
+    "welcomeBody": "Vælg dit sprog, og fortæl os, hvad vi skal kalde dig.",
+    "name": "Fornavn",
+    "namePh": "Dit fornavn (valgfrit)",
+    "setupTitle": "Om din tinnitus {{name}}",
+    "widgetTitle": "Ét tryk fra hjemmeskærmen",
+    "widgetBody": "Widgetten logger et udbrud uden at åbne appen og viser dagens tal og dit 7-dages gennemsnit.",
+    "widgetLater": "Du kan tilføje den senere: Indstillinger → Widget → Tilføj.",
+    "extrasTitle": "Ekstra",
+    "extrasBody": "Valgfrit. Begge dele er en del af Pro – de slås til, i det øjeblik du starter den gratis prøveperiode.",
+    "extrasNote": "Du kan ændre det hele i Indstillinger når som helst.",
+    "setupBody": "Valgfrit – det står øverst i din rapport, så lægen ser det grundlæggende.",
+    "sinceQ": "Hvor længe har du haft den?",
+    "sinceQShort": "Siden",
+    "since": {
+      "lt3m": "Under 3 måneder",
+      "3to12m": "3–12 måneder",
+      "1to5y": "1–5 år",
+      "gt5y": "Over 5 år"
+    },
+    "sideQ": "Hvor hører du den?",
+    "soundQ": "Hvordan lyder den som regel?",
+    "newHint": "Ny tinnitus bør tjekkes af en læge – især sammen med en ændring i hørelsen."
+  },
+  "lang": {
+    "en": "English",
+    "da": "Dansk",
+    "de": "Deutsch",
+    "sv": "Svenska",
+    "nb": "Norsk"
+  },
+  "diary": {
+    "groups": {
+      "trigger": "Triggere",
+      "symptom": "Også mærket",
+      "relief": "Hvad hjalp",
+      "location": "Hvor",
+      "sound": "Lyd"
+    },
+    "tags": {
+      "trigger": {
+        "loud_noise": "Høj støj",
+        "headphones": "Høretelefoner",
+        "concert": "Koncert / fest",
+        "quiet_room": "Meget stille rum",
+        "stress": "Stress",
+        "poor_sleep": "Dårlig søvn",
+        "caffeine": "Koffein",
+        "alcohol": "Alkohol",
+        "salt": "Salt mad",
+        "nicotine": "Nikotin",
+        "jaw_clench": "Tænderskæren / kæbespænding",
+        "neck_tension": "Spænding i nakken",
+        "cold_illness": "Forkølelse / sygdom",
+        "flight_pressure": "Fly / trykændring",
+        "medication_change": "Ændret medicin",
+        "fatigue": "Træthed",
+        "exertion": "Fysisk anstrengelse"
+      },
+      "sound": {
+        "ringing": "Ringen",
+        "whistling": "Piben",
+        "hissing": "Susen",
+        "buzzing": "Summen",
+        "humming": "Brummen",
+        "roaring": "Brusen",
+        "pulsing": "Pulserende",
+        "clicking": "Klik",
+        "several": "Flere lyde"
+      },
+      "location": {
+        "left": "Venstre øre",
+        "right": "Højre øre",
+        "both": "Begge ører",
+        "in_head": "Inde i hovedet"
+      },
+      "symptom": {
+        "hyperacusis": "Lydfølsomhed",
+        "ear_fullness": "Trykken for øret",
+        "muffled_hearing": "Dæmpet hørelse",
+        "dizziness": "Svimmelhed",
+        "headache": "Hovedpine",
+        "jaw_pain": "Smerter i kæben",
+        "neck_pain": "Nakkesmerter",
+        "concentration": "Svært at koncentrere sig",
+        "sleep_trouble": "Svært ved at sove",
+        "anxiety": "Bekymring / angst",
+        "irritability": "Irritabilitet",
+        "fatigue": "Udmattelse"
+      },
+      "relief": {
+        "masking": "Maskeringslyd",
+        "nature_sounds": "Naturlyde",
+        "music": "Musik",
+        "distraction": "Distraktion",
+        "relaxation": "Afslapning",
+        "breathing": "Vejrtrækningsøvelse",
+        "exercise": "Motion",
+        "sleep": "Søvn",
+        "hearing_aid": "Høreapparat",
+        "fresh_air": "Frisk luft",
+        "talking": "Snakke med nogen"
+      }
+    }
+  },
+  "widget": {
+    "title": "Højere nu-widget",
+    "ongoing": "Højere lige nu",
+    "noData": "Ingen check-ins endnu",
+    "settingsHint": "Log et udbrud fra hjemmeskærmen eller låseskærmen",
+    "guideBtn": "Tilføj",
+    "previewLine1": "I dag: 3/10",
+    "previewLine2": "7-dages gns. 3,4 · 2 udbrud denne md.",
+    "intro": "Ét tryk på widgetten logger et udbrud – du behøver ikke finde appen først.",
+    "stepsIos": [
+      "Hold fingeren på et tomt sted på hjemmeskærmen, til apps begynder at vippe.",
+      "Tryk på + (øverst til venstre), og søg efter Fodmara.",
+      "Vælg den lille eller mellemstore widget, og tryk Tilføj widget."
+    ],
+    "stepsAndroid": [
+      "Hold fingeren på et tomt sted på hjemmeskærmen.",
+      "Tryk Widgets, og find Fodmara.",
+      "Træk widgetten ind på hjemmeskærmen."
+    ],
+    "lockscreen": "Låseskærm: hold fingeren på låseskærmen → Tilpas → tryk på widgetfeltet → Fodmara.",
+    "louderNow": "Højere nu",
+    "openSpike": "Udbrud i gang",
+    "notLogged": "I dag ikke logget endnu",
+    "today": "I dag: {{n}}/10",
+    "avg7": "7-dages gns. {{n}}",
+    "spikes_one": "{{count}} udbrud denne md.",
+    "spikes_other": "{{count}} udbrud denne md."
+  },
+  "weather": {
+    "title": "Lufttryk",
+    "hint": "Følg dagens lufttryk for dit sted – kræver ingen lokationsadgang.",
+    "choose": "Vælg sted",
+    "changePlace": "Skift sted",
+    "on": "Til · {{place}}",
+    "off": "Lufttryk slået fra",
+    "pickTitle": "Dit sted",
+    "pickHint": "Skriv en by. Kun byens koordinater sendes til vejrtjenesten (Open-Meteo) – aldrig din telefons placering.",
+    "placePh": "By, fx Viborg",
+    "searchFailed": "Søgningen fejlede – tjek forbindelsen",
+    "privacy": "Open-Meteo er en gratis, åben vejrtjeneste uden konto eller sporing. Trykhistorikken gemmes kun på din telefon.",
+    "pressureNow": "Lufttryk {{p}} hPa",
+    "noData": "Henter lufttryk…",
+    "falling": "Faldet {{d}} hPa siden i går",
+    "rising": "Steget {{d}} hPa siden i går",
+    "stable": "Stabilt siden i går",
+    "whatIsIt": "Hvad betyder det?",
+    "infoTitle": "Om lufttryk",
+    "infoWhat": "Lufttryk (hPa) er atmosfærens vægt. Omkring 1013 hPa er gennemsnit; stigende tryk betyder som regel roligt vejr, faldende tryk at en front er på vej.",
+    "infoWhy": "Nogle med tinnitus – især ved Ménières sygdom eller trykproblemer i øret – mærker ændringer, når lufttrykket skifter. Dokumentationen er begrænset, og det er forskelligt fra person til person; ændringen betyder mere end selve tallet.",
+    "infoApp": "Fodmara gemmer dagsgennemsnittet for dit sted og sammenligner de dage, dine udbrud startede, med alle andre dage. Mønsterkortet og rapporten viser den sammenligning – intet andet.",
+    "infoDisclaimer": "Det er en beskrivelse af din egen dagbog, ikke en medicinsk udtalelse. Tal med din læge om, hvad det betyder for dig."
+  },
+  "learn": {
+    "weekday": "{{pct}} % af dine udbrud startede en {{day}}.",
+    "time": "Dine udbrud starter oftest om {{part}} ({{pct}} %).",
+    "period": "{{pct}} % af dine udbrud startede inden for en dag fra din menstruation.",
+    "pressureYes": "{{pct}} % af dine udbrud startede på en dag, hvor lufttrykket faldt mindst {{hpa}} hPa – kun {{all}} % af alle dage havde sådan et fald.",
+    "pressureNo": "Faldende lufttryk skiller sig ikke ud: {{pct}} % af dine udbrud startede på en dag med faldende tryk – omtrent som alle dage ({{all}} %).",
+    "trigger": "\"{{tag}}\" er den trigger, du logger oftest – ved {{pct}} % af udbruddene.",
+    "trendDown": "De sidste 30 dage lå din tinnitus i gennemsnit på {{now}} – ned fra {{before}} de 30 dage før.",
+    "trendUp": "De sidste 30 dage lå din tinnitus i gennemsnit på {{now}} – op fra {{before}} de 30 dage før.",
+    "trendSame": "De sidste 30 dage lå din tinnitus i gennemsnit på {{now}} – nogenlunde som de 30 dage før ({{before}}).",
+    "contrast": {
+      "sleep": "Efter gode nætter lå den i gennemsnit på {{hi}}, efter dårlige nætter på {{lo}}.",
+      "stress": "På stressede dage lå den på {{hi}}, på rolige dage på {{lo}}.",
+      "noise": "Dagen efter en støjende dag lå den på {{hi}}, efter stille dage på {{lo}}."
+    },
+    "relief": "\"{{tag}}\" hjalp ved {{pct}} % af dine udbrud."
+  },
+  "loud": {
+    "question": "Hvor høj er din tinnitus i dag?",
+    "pick": "Tryk på et tal",
+    "min": "0 · mærkes ikke",
+    "max": "10 · så højt som det bliver",
+    "level": {
+      "silent": "Mærkes ikke",
+      "low": "Svag",
+      "noticeable": "Mærkbar",
+      "loud": "Høj",
+      "veryLoud": "Meget høj"
+    },
+    "infoTitle": "Om skalaen 0–10",
+    "infoWhat": "Vurdér, hvor høj tinnitus var det meste af dagen – ikke det værste øjeblik (det er det, Højere nu er til). Tallet er dit eget: sammenlign med dine egne dage, ikke med andres.",
+    "infoScale": [
+      "0 – du lægger ikke mærke til den",
+      "1–3 – der, hvis du lytter efter",
+      "4–6 – mærkbar, men du kan skubbe den i baggrunden",
+      "7–8 – høj og svær at ignorere",
+      "9–10 – så højt som den nogensinde bliver"
+    ],
+    "infoTip": "Tjek ind på nogenlunde samme tid hver dag, fx om aftenen. Gene logges for sig, fordi hvor meget den går dig på, ofte svinger mere end selve lydstyrken."
+  },
+  "redFlags": {
+    "link": "Hvornår skal jeg hurtigt til lægen?",
+    "title": "Hvornår skal du hurtigt til lægen",
+    "intro": "Det meste tinnitus er ufarligt i sig selv. Nogle få situationer kræver hurtig lægehjælp:",
+    "urgentTitle": "Samme dag – eller ring 112",
+    "urgent": [
+      "Hørelsen falder pludselig på det ene øre (i løbet af timer eller få dage). Pludseligt høretab behandles bedst inden for få dage.",
+      "Tinnitus kommer sammen med pludselig voldsom svimmelhed, lammelse i ansigtet, dobbeltsyn eller besvær med at tale.",
+      "Den startede efter et slag mod hovedet."
+    ],
+    "soonTitle": "Bestil tid snart",
+    "soon": [
+      "Den er kun i det ene øre og går ikke væk.",
+      "Den pulserer i takt med dit hjerte.",
+      "Den kommer sammen med ørepine, flåd fra øret eller et øre, der føles stoppet og ikke går over.",
+      "Den er ny og er ikke blevet undersøgt.",
+      "Den går hårdt ud over din søvn, dit humør eller dit arbejde – der findes hjælp."
+    ],
+    "routine": "Tinnitus, du har haft længe, og som er undersøgt, er som regel ikke farlig. Lydterapi, høreapparater og forløb baseret på kognitiv terapi kan du få via egen læge eller en øre-næse-hals-læge.",
+    "disclaimer": "Generel information, ikke en diagnose. Er du i tvivl, så ring til din læge."
+  }
+}

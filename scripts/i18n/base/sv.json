@@ -1,0 +1,544 @@
+{
+  "nav": {
+    "home": "Hem",
+    "calendar": "Kalender",
+    "insights": "Insikter",
+    "settings": "Inställningar"
+  },
+  "common": {
+    "add": "Lägg till",
+    "cancel": "Avbryt",
+    "save": "Spara",
+    "delete": "Radera",
+    "done": "Klar",
+    "other": "Annat…",
+    "typeOwn": "Skriv eget",
+    "disclaimer": "Fodmara är en dagbok för självobservation, inte en medicinteknisk produkt. Den ställer inga diagnoser och ger inga behandlingsråd. Prata med din läkare om det du loggar.",
+    "edit": "Ändra",
+    "off": "Stäng av",
+    "on": "Slå på",
+    "search": "Sök"
+  },
+  "home": {
+    "title": "Fodmara",
+    "openSince": "Starkare sedan {{time}}",
+    "tapToEdit": "Tryck för att avsluta eller lägga till detaljer",
+    "recent": "Senaste skoven",
+    "ongoing": "pågår",
+    "empty": "Inga skov loggade. När det plötsligt blir starkare, tryck Starkare nu.",
+    "checkinTitle": "I dag",
+    "checkin": {
+      "none": "Lugn dag",
+      "mild": "Märkbar dag",
+      "attack": "Tung dag"
+    },
+    "fields": {
+      "sleep": "Sömn i natt",
+      "stress": "Stress",
+      "loudness": "Styrka",
+      "distress": "Besvär",
+      "noise": "Buller i dag"
+    },
+    "greeting": "Hej {{name}}",
+    "saveDay": "Spara dagen",
+    "savedDay": "Dagen är sparad",
+    "periodToday": "Mens i dag",
+    "periodShort": "mens",
+    "periodHint": "Tryck för att markera i dag",
+    "todayIs": "I dag: {{word}}",
+    "louderNow": "Starkare nu",
+    "louderHint": "Logga ett skov – detaljer kan vänta",
+    "endSpike": "Det har lagt sig",
+    "weekTitle": "Senaste 7 dagarna",
+    "avg7": "snittstyrka",
+    "vsLastWeek": "jämfört med veckan före",
+    "spikesMonth_one": "skov denna månad",
+    "spikesMonth_other": "skov denna månad",
+    "sparkEmpty": "Checka in några dagar, så dyker din kurva upp här.",
+    "fieldHint": {
+      "distress": "1 inte alls · 5 mycket",
+      "sleep": "1 dålig · 5 bra",
+      "stress": "1 lugn · 5 mycket",
+      "noise": "1 tyst · 5 mycket högt"
+    }
+  },
+  "episode": {
+    "title": "Skov",
+    "ongoing": "Starkare just nu",
+    "start": "Start",
+    "end": "Slut",
+    "duration": "{{h}} h",
+    "intensity": "Högsta styrka",
+    "mildLbl": "lite starkare",
+    "severeLbl": "mycket stark",
+    "note": "Anteckning",
+    "notePh": "Annat värt att komma ihåg",
+    "deleteConfirm": "Radera detta skov?",
+    "quickIntro": "Loggat. Resten kan vänta tills det har lagt sig.",
+    "howBad": "Hur stark är den just nu?",
+    "level": {
+      "mild": "Lite starkare",
+      "moderate": "Mycket starkare",
+      "severe": "Extremt stark"
+    },
+    "laterLink": "Fyll i senare",
+    "journey": {
+      "trigger": "Vad tror du satte igång det?",
+      "symptom": "Vad märkte du mer?",
+      "meds": "Tog eller använde du något?",
+      "note": "Något att komma ihåg?",
+      "relief": "Vad hjälpte?",
+      "sound": "Hur låter den?"
+    },
+    "more": "{{n}} fler…",
+    "skip": "Hoppa över",
+    "editAll": "Ändra alla detaljer",
+    "doneTitle": "Loggat",
+    "tagsCount": "markeringar",
+    "cmpTitle": "Detta skov jämfört med ditt snitt",
+    "cmpThis": "Detta skov",
+    "cmpAvg": "Snitt av {{n}} skov",
+    "cmpNeedMore": "Logga några skov till, så visas hur detta står sig mot ditt snitt.",
+    "cmpLocked": "Pro visar hur detta skov står sig mot ditt snitt.",
+    "liveHint": "När det har lagt sig kommer några korta frågor – svara på det du kan.",
+    "howBadNow": "Hur stark är den just nu?"
+  },
+  "calendar": {
+    "spike": "Skov",
+    "loudness": "Styrka {{n}} – {{word}}",
+    "noCheckin": "Ingen incheckning denna dag."
+  },
+  "meds": {
+    "title": "Läkemedel & hjälpmedel",
+    "sub": "Dina egna läkemedel, kosttillskott och hjälpmedel (t.ex. hörapparat eller ljudgenerator) med namn. Fodmara föreslår aldrig behandling eller doser.",
+    "name": "Namn",
+    "namePh": "t.ex. Melatonin eller Ljudgenerator",
+    "acute": "Vid behov",
+    "preventive": "Regelbundet",
+    "acuteHint": "Logga det du använde under ett skov i skovets sista steg.",
+    "addFirst": "Lägg till läkemedel eller hjälpmedel",
+    "show": "Visa",
+    "hide": "Dölj"
+  },
+  "insights": {
+    "title": "Insikter",
+    "lockedTitle": "Din kurva kräver Pro",
+    "lockedBody": "Styrkan över 90 dagar och per månad, hur sömn, stress och buller hänger ihop med starkare dagar, vilka triggers som återkommer – plus PDF-rapporten till läkaren.",
+    "range": {
+      "month": "Denna månad",
+      "3m": "3 månader",
+      "12m": "12 månader"
+    },
+    "noData": "Inte tillräckligt med data ännu.",
+    "disclaimer": "Snitt och andelar är enkla räkningar av det du loggat, inte bevis för orsaker.",
+    "patterns": "Dina mönster",
+    "patWeekday": "{{pct}} % av dina skov började en {{day}}",
+    "patTime": "{{pct}} % av dina skov började på {{part}}",
+    "part": {
+      "night": "natten",
+      "morning": "morgonen",
+      "afternoon": "eftermiddagen",
+      "evening": "kvällen"
+    },
+    "patPeriod": "{{pct}} % av dina skov började inom en dag från din mens",
+    "patBasis": "Baserat på {{n}} skov de senaste 6 månaderna",
+    "patNote": "Mönster beskriver din logg – de bevisar ingen orsak. Ta med dem till läkaren.",
+    "patNeed": "Mönster dyker upp efter ungefär två veckors dagliga incheckningar.",
+    "patPressure": "{{pct}} % av dina skov började en dag med fallande lufttryck (≥{{hpa}} hPa) – mot {{all}} % av alla dagar.",
+    "learnTitle": "Så ser det ut",
+    "learnNote": "Observationer från din egen dagbok med vanliga ord. De beskriver – de förklarar inte.",
+    "learnEmpty": "Efter ett par veckors incheckningar sammanfattar den här med vanliga ord vad som sticker ut.",
+    "loud90": "Styrka, senaste 90 dagarna",
+    "loud90Hint": "Prickar = dina dagliga incheckningar · linje = 7-dagarssnitt",
+    "monthly": "Snittstyrka per månad",
+    "avgLoud": "snittstyrka (0–10)",
+    "avgDistress": "snittbesvär (1–5)",
+    "hardDays": "tunga dagar (7+) av {{n}} loggade",
+    "spikes": "Skov",
+    "avgSpikeHours": "snittimmar per skov",
+    "shareOfSpikes": "andel av skoven",
+    "contrast": {
+      "sleep": "Efter bra nätter (4–5) låg din tinnitus i snitt på {{hi}} – efter dåliga nätter (1–2) på {{lo}}",
+      "stress": "Under stressiga dagar (4–5) låg den på {{hi}} – under lugna dagar (1–2) på {{lo}}",
+      "noise": "Dagen efter en bullrig dag (4–5) låg den på {{hi}} – efter tysta dagar (1–2) på {{lo}}"
+    },
+    "contrastBasis": "Baserat på {{hi}} och {{lo}} dagar de senaste 6 månaderna"
+  },
+  "report": {
+    "title": "Tinnitusdagbok – rapport",
+    "cta": "PDF-rapport",
+    "sub": "Översikt på en sida, styrkan vecka för vecka och en rad per skov – uppställd för läkaren eller öronläkaren.",
+    "preset": {
+      "month": "Denna månad",
+      "last": "Förra månaden",
+      "3m": "Senaste 3 månaderna",
+      "custom": "Välj datum"
+    },
+    "from": "Från",
+    "to": "Till",
+    "make": "Skapa PDF",
+    "hours": "Timmar",
+    "count": "Antal (andel)",
+    "footer": "Skapad med {{app}} – en dagbok för självobservation, inte en medicinteknisk produkt",
+    "chartTitle": "Styrka per vecka",
+    "notesTitle": "Anteckningar till läkaren",
+    "notesPh": "Frågor, förändringar i hörseln, läkemedel eller hjälpmedel, annat…",
+    "pressureCol": "hPa (Δ)",
+    "pressureNote": "hPa = dygnsmedel för lufttryck på din ort, Δ = förändring från dagen innan.",
+    "daysLogged": "Loggade dagar",
+    "hardDays": "Tunga dagar (styrka 7+)",
+    "spikes": "Skov",
+    "peakShort": "Topp",
+    "legendLoud": "Snittstyrka (0–10)",
+    "legendSpikes": "Skov den veckan",
+    "weeks": "Vecka för vecka",
+    "week": "Vecka från",
+    "loudShort": "Styrka",
+    "distressShort": "Besvär",
+    "daysShort": "Dagar",
+    "scaleNote": "Styrka 0–10; besvär, sömn, stress och buller 1–5 (sömn: 5 = bra).",
+    "helped": "Hjälpte / använt"
+  },
+  "notif": {
+    "checkinTitle": "Hur stark är den i dag?",
+    "checkinBody": "En incheckning på 5 sekunder håller din kurva komplett.",
+    "openTitle": "Har det lagt sig?",
+    "openBody": "Ett skov har varit öppet i 12 timmar. Tryck för att ange när det slutade.",
+    "actionEnd": "Lagt sig nu",
+    "actionContinue": "Fortfarande starkt"
+  },
+  "lock": {
+    "title": "Ange PIN",
+    "hint": "Din dagbok är låst. Ange din PIN med 4–6 siffror."
+  },
+  "settings": {
+    "language": "Språk",
+    "privacy": "Integritet",
+    "privacyPolicy": "Integritetspolicy",
+    "support": "Support",
+    "diary": "Dagbok",
+    "manage": "Hantera",
+    "reminders": "Påminnelser",
+    "checkinReminder": "Daglig check-in-påminnelse",
+    "reminderTime": "Tid",
+    "openEpisodeReminder": "Påminn mig om ett skov står öppet i 12 timmar",
+    "pin": "PIN-lås",
+    "pinOn": "På – frågar efter 1 minut i bakgrunden",
+    "pinOff": "Av",
+    "pinSetup": "Ange PIN",
+    "pinRemove": "Ta bort",
+    "pinRemoved": "PIN borttagen",
+    "pinSet": "PIN satt",
+    "pinNew": "Ny PIN (4–6 siffror)",
+    "pinRepeat": "Upprepa PIN",
+    "pinMismatch": "PIN-koderna matchar inte",
+    "pinHint": "En glömd PIN kan inte återställas – bara radering av all data låser upp appen.",
+    "data": "Dina data",
+    "dataNote": "Allt stannar på den här telefonen. Säkerhetskopian är krypterad med din lösenfras och delas av dig själv – vi laddar aldrig upp något.",
+    "about": "Om",
+    "feedback": "Skicka feedback",
+    "restored": "Köp återställda",
+    "proThanks": "Tack för att du stöttar Fodmara.",
+    "freeHint": "Obegränsad loggning. Pro ger din kurva, mönster, PDF-rapporten och PIN-lås.",
+    "profile": "Profil",
+    "whatIsThis": "Vad är det?",
+    "cycleTracking": "Registrera menscykel",
+    "cycleHint": "Lägger till ”mens i dag” i incheckningen och visar andelen skov kring din mens.",
+    "widget": "Widget",
+    "planLifetime": "Livstid – förnyas inte",
+    "planYearly": "Årligen · förnyas {{date}}",
+    "planTrial": "Gratis provperiod till {{date}}",
+    "planRenews": "Förnyas {{date}}",
+    "planEnds": "Upphör {{date}}",
+    "switchLifetime": "Byt till livstid",
+    "switchLifetimeHint": "Köp livstid en gång och säg sedan upp årsplanen under Hantera prenumeration – butiken byter inte automatiskt.",
+    "manageSub": "Hantera prenumeration",
+    "planStore": "Köpt via {{store}}",
+    "triggers": "Triggers"
+  },
+  "backup": {
+    "export": "Exportera krypterad säkerhetskopia",
+    "import": "Importera säkerhetskopia",
+    "passphrase": "Välj en lösenfras för säkerhetskopian",
+    "passphraseShort": "Lösenfras",
+    "file": "Säkerhetskopia",
+    "importHint": "Nyaste posten vinner när samma post finns på båda telefonerna.",
+    "wrongApp": "Den här säkerhetskopian tillhör en annan app",
+    "exported": "Säkerhetskopia exporterad",
+    "imported": "Säkerhetskopia importerad",
+    "importFailed": "Kunde inte importera – fel lösenfras eller fil?",
+    "wipe": "Radera all data",
+    "wipeConfirm": "Detta raderar permanent allt som appen sparat på den här enheten. Exporterade säkerhetskopior påverkas inte. Fortsätt?",
+    "wiped": "All data raderad"
+  },
+  "plan": {
+    "free": "Gratis",
+    "pro": "Fodmara Pro",
+    "upgrade": "Uppgradera"
+  },
+  "paywall": {
+    "title": "Se vad som gör den starkare",
+    "benefits": [
+      "Din styrkekurva över veckor och månader",
+      "Hur sömn, stress och buller hänger ihop med starkare dagar",
+      "PDF-rapport som läkaren läser på en minut",
+      "PIN-lås, krypterad säkerhetskopia och obegränsad historik"
+    ],
+    "plan": {
+      "annual": "Årligen",
+      "lifetime": "Livstid"
+    },
+    "trial": "7 dagar gratis, sedan årligen",
+    "ctaTrial": "Starta gratis provperiod",
+    "ctaBuy": "Köp en gång",
+    "legal": "Avsluta när som helst i ditt butikskonto. Loggning är gratis för alltid.",
+    "restore": "Återställ köp",
+    "terms": "Villkor",
+    "reasons": {
+      "insights": "Din kurva och rapporten ingår i Pro.",
+      "history": "Gratis visar de senaste 90 dagarna. Pro sparar allt.",
+      "pin": "PIN-låset ingår i Pro.",
+      "backup": "Säkerhetskopia och import ingår i Pro.",
+      "onboarding": "",
+      "settings": "",
+      "weather": "Lufttryck ingår i Pro.",
+      "cycle": "Menscykel ingår i Pro."
+    }
+  },
+  "onboarding": {
+    "steps": [
+      {
+        "title": "En siffra om dagen",
+        "body": "Hur stark var den i dag, 0–10? Fem sekunder på kvällen. Över veckor blir siffran en kurva du faktiskt kan visa någon."
+      },
+      {
+        "title": "Starkare nu",
+        "body": "När den plötsligt blossar upp loggar ett tryck det. Hur den låter, vad som satte igång det och vad som hjälpte kan vänta."
+      },
+      {
+        "title": "Privat från grunden",
+        "body": "Inget konto, inget moln, ingen spårning. Din dagbok bor på den här telefonen, och bara du kan exportera den."
+      }
+    ],
+    "next": "Nästa",
+    "skip": "Hoppa över",
+    "start": "Kom igång",
+    "welcome": "Välkommen till Fodmara",
+    "welcomeBody": "Välj språk och berätta vad vi ska kalla dig.",
+    "name": "Förnamn",
+    "namePh": "Ditt förnamn (valfritt)",
+    "setupTitle": "Om din tinnitus {{name}}",
+    "widgetTitle": "Ett tryck från hemskärmen",
+    "widgetBody": "Widgeten loggar ett skov utan att öppna appen och visar dagens siffra och ditt 7-dagarssnitt.",
+    "widgetLater": "Du kan lägga till den senare: Inställningar → Widget → Lägg till.",
+    "extrasTitle": "Extra",
+    "extrasBody": "Valfritt. Båda ingår i Pro – de slås på i samma stund som du startar den kostnadsfria provperioden.",
+    "extrasNote": "Allt kan ändras i Inställningar när som helst.",
+    "setupBody": "Valfritt – det står överst i din rapport så att läkaren ser grunderna.",
+    "sinceQ": "Hur länge har du haft den?",
+    "sinceQShort": "Sedan",
+    "since": {
+      "lt3m": "Under 3 månader",
+      "3to12m": "3–12 månader",
+      "1to5y": "1–5 år",
+      "gt5y": "Över 5 år"
+    },
+    "sideQ": "Var hör du den?",
+    "soundQ": "Hur låter den oftast?",
+    "newHint": "Ny tinnitus bör kollas av en läkare – särskilt tillsammans med en förändring i hörseln."
+  },
+  "lang": {
+    "en": "English",
+    "da": "Dansk",
+    "de": "Deutsch",
+    "sv": "Svenska",
+    "nb": "Norsk"
+  },
+  "diary": {
+    "groups": {
+      "trigger": "Triggers",
+      "symptom": "Märkte också",
+      "relief": "Vad hjälpte",
+      "location": "Var",
+      "sound": "Ljud"
+    },
+    "tags": {
+      "trigger": {
+        "loud_noise": "Högt buller",
+        "headphones": "Hörlurar",
+        "concert": "Konsert / fest",
+        "quiet_room": "Mycket tyst rum",
+        "stress": "Stress",
+        "poor_sleep": "Dålig sömn",
+        "caffeine": "Koffein",
+        "alcohol": "Alkohol",
+        "salt": "Salt mat",
+        "nicotine": "Nikotin",
+        "jaw_clench": "Tandgnissling / käkspänning",
+        "neck_tension": "Spänd nacke",
+        "cold_illness": "Förkylning / sjukdom",
+        "flight_pressure": "Flyg / tryckändring",
+        "medication_change": "Ändrad medicin",
+        "fatigue": "Trötthet",
+        "exertion": "Fysisk ansträngning"
+      },
+      "sound": {
+        "ringing": "Ringande",
+        "whistling": "Pipande",
+        "hissing": "Väsande",
+        "buzzing": "Surrande",
+        "humming": "Brummande",
+        "roaring": "Brusande",
+        "pulsing": "Pulserande",
+        "clicking": "Klickande",
+        "several": "Flera ljud"
+      },
+      "location": {
+        "left": "Vänster öra",
+        "right": "Höger öra",
+        "both": "Båda öronen",
+        "in_head": "Inne i huvudet"
+      },
+      "symptom": {
+        "hyperacusis": "Ljudkänslighet",
+        "ear_fullness": "Lock för örat",
+        "muffled_hearing": "Dämpad hörsel",
+        "dizziness": "Yrsel",
+        "headache": "Huvudvärk",
+        "jaw_pain": "Käksmärta",
+        "neck_pain": "Nacksmärta",
+        "concentration": "Svårt att koncentrera sig",
+        "sleep_trouble": "Svårt att sova",
+        "anxiety": "Oro / ångest",
+        "irritability": "Irritabilitet",
+        "fatigue": "Utmattning"
+      },
+      "relief": {
+        "masking": "Maskeringsljud",
+        "nature_sounds": "Naturljud",
+        "music": "Musik",
+        "distraction": "Distraktion",
+        "relaxation": "Avslappning",
+        "breathing": "Andningsövning",
+        "exercise": "Motion",
+        "sleep": "Sömn",
+        "hearing_aid": "Hörapparat",
+        "fresh_air": "Frisk luft",
+        "talking": "Prata med någon"
+      }
+    }
+  },
+  "widget": {
+    "title": "Starkare nu-widget",
+    "ongoing": "Starkare just nu",
+    "noData": "Inga incheckningar än",
+    "settingsHint": "Logga ett skov från hemskärmen eller låsskärmen",
+    "guideBtn": "Lägg till",
+    "previewLine1": "I dag: 3/10",
+    "previewLine2": "7-dagarssnitt 3,4 · 2 skov denna månad",
+    "intro": "Ett tryck på widgeten loggar ett skov – du behöver inte leta upp appen först.",
+    "stepsIos": [
+      "Håll fingret på en tom yta på hemskärmen tills apparna börjar vicka.",
+      "Tryck på + (uppe till vänster) och sök efter Fodmara.",
+      "Välj den lilla eller mellanstora widgeten och tryck Lägg till widget."
+    ],
+    "stepsAndroid": [
+      "Håll fingret på en tom yta på hemskärmen.",
+      "Tryck Widgetar och hitta Fodmara.",
+      "Dra widgeten till hemskärmen."
+    ],
+    "lockscreen": "Låsskärm: håll fingret på låsskärmen → Anpassa → tryck på widgetfältet → Fodmara.",
+    "louderNow": "Starkare nu",
+    "openSpike": "Skov pågår",
+    "notLogged": "I dag inte loggat än",
+    "today": "I dag: {{n}}/10",
+    "avg7": "7-dagarssnitt {{n}}",
+    "spikes_one": "{{count}} skov denna månad",
+    "spikes_other": "{{count}} skov denna månad"
+  },
+  "weather": {
+    "title": "Lufttryck",
+    "hint": "Följ dagens lufttryck för din ort – ingen platsåtkomst behövs.",
+    "choose": "Välj ort",
+    "changePlace": "Byt ort",
+    "on": "På · {{place}}",
+    "off": "Lufttrycksspårning avstängd",
+    "pickTitle": "Din ort",
+    "pickHint": "Skriv en stad. Bara dess koordinater skickas till vädertjänsten (Open-Meteo) – aldrig din enhets plats.",
+    "placePh": "Stad, t.ex. Malmö",
+    "searchFailed": "Sökningen misslyckades – kontrollera anslutningen",
+    "privacy": "Open-Meteo är en gratis, öppen vädertjänst utan konto eller spårning. Tryckhistoriken sparas bara på din enhet.",
+    "pressureNow": "Lufttryck {{p}} hPa",
+    "noData": "Hämtar lufttryck…",
+    "falling": "Fallit {{d}} hPa sedan igår",
+    "rising": "Stigit {{d}} hPa sedan igår",
+    "stable": "Stabilt sedan igår",
+    "whatIsIt": "Vad betyder det?",
+    "infoTitle": "Om lufttryck",
+    "infoWhat": "Lufttryck (hPa) är atmosfärens vikt. Runt 1013 hPa är genomsnitt; stigande tryck betyder oftast lugnt väder, fallande tryck att en front är på väg.",
+    "infoWhy": "En del med tinnitus – särskilt vid Ménières sjukdom eller tryckproblem i örat – märker skillnad när lufttrycket ändras. Forskningen är begränsad och det skiljer sig mellan personer; förändringen betyder mer än själva värdet.",
+    "infoApp": "Fodmara sparar dygnsmedelvärdet för din ort och jämför dagarna då dina skov började med alla andra dagar. Mönsterkortet och rapporten visar den jämförelsen – inget annat.",
+    "infoDisclaimer": "Det är en beskrivning av din egen dagbok, inte ett medicinskt uttalande. Prata med din läkare om vad det betyder för dig."
+  },
+  "learn": {
+    "weekday": "{{pct}} % av dina skov började en {{day}}.",
+    "time": "Dina skov börjar oftast på {{part}} ({{pct}} %).",
+    "period": "{{pct}} % av dina skov började inom en dag från din mens.",
+    "pressureYes": "{{pct}} % av dina skov började en dag då lufttrycket föll minst {{hpa}} hPa – bara {{all}} % av alla dagar hade ett sådant fall.",
+    "pressureNo": "Fallande lufttryck sticker inte ut: {{pct}} % av dina skov började en dag med fallande tryck, ungefär som alla dagar ({{all}} %).",
+    "trigger": "”{{tag}}” är den trigger du loggar oftast – vid {{pct}} % av skoven.",
+    "trendDown": "De senaste 30 dagarna låg din tinnitus i snitt på {{now}} – ner från {{before}} de 30 dagarna före.",
+    "trendUp": "De senaste 30 dagarna låg din tinnitus i snitt på {{now}} – upp från {{before}} de 30 dagarna före.",
+    "trendSame": "De senaste 30 dagarna låg din tinnitus i snitt på {{now}} – ungefär som de 30 dagarna före ({{before}}).",
+    "contrast": {
+      "sleep": "Efter bra nätter låg den i snitt på {{hi}}, efter dåliga nätter på {{lo}}.",
+      "stress": "Under stressiga dagar låg den på {{hi}}, under lugna dagar på {{lo}}.",
+      "noise": "Dagen efter en bullrig dag låg den på {{hi}}, efter tysta dagar på {{lo}}."
+    },
+    "relief": "”{{tag}}” hjälpte vid {{pct}} % av dina skov."
+  },
+  "loud": {
+    "question": "Hur stark är din tinnitus i dag?",
+    "pick": "Tryck på en siffra",
+    "min": "0 · märks inte",
+    "max": "10 · så starkt det någonsin blir",
+    "level": {
+      "silent": "Märks inte",
+      "low": "Svag",
+      "noticeable": "Märkbar",
+      "loud": "Stark",
+      "veryLoud": "Mycket stark"
+    },
+    "infoTitle": "Om skalan 0–10",
+    "infoWhat": "Bedöm hur stark tinnitusen var större delen av dagen – inte det värsta ögonblicket (det är det Starkare nu är till för). Siffran är din egen: jämför med dina egna dagar, inte med andras.",
+    "infoScale": [
+      "0 – du märker den inte",
+      "1–3 – där om du lyssnar efter den",
+      "4–6 – märkbar, men du kan skjuta den åt sidan",
+      "7–8 – stark och svår att ignorera",
+      "9–10 – så stark som den någonsin blir"
+    ],
+    "infoTip": "Checka in ungefär samma tid varje dag, till exempel på kvällen. Besvär loggas för sig, eftersom hur mycket den tar på dig ofta svänger mer än själva styrkan."
+  },
+  "redFlags": {
+    "link": "När ska jag snabbt till läkare?",
+    "title": "När du snabbt ska söka vård",
+    "intro": "Tinnitus är oftast ofarligt i sig. Några få situationer kräver snabb vård:",
+    "urgentTitle": "Samma dag – eller ring 112",
+    "urgent": [
+      "Hörseln försämras plötsligt på ena örat (inom timmar eller några dagar). Plötslig hörselnedsättning behandlas bäst inom några dagar.",
+      "Tinnitus kommer tillsammans med plötslig kraftig yrsel, förlamning i ansiktet, dubbelseende eller svårt att tala.",
+      "Den började efter ett slag mot huvudet."
+    ],
+    "soonTitle": "Boka tid snart",
+    "soon": [
+      "Den sitter bara i ena örat och går inte över.",
+      "Den pulserar i takt med ditt hjärta.",
+      "Den kommer med öronvärk, flytning eller lock för örat som inte släpper.",
+      "Den är ny och har inte undersökts.",
+      "Den påverkar din sömn, ditt humör eller ditt arbete mycket – det finns hjälp."
+    ],
+    "routine": "Tinnitus som du haft länge och som har undersökts är oftast inte farlig. Ljudterapi, hörapparater och KBT-baserade program finns via vårdcentralen eller en öronläkare.",
+    "disclaimer": "Allmän information, ingen diagnos. Ring 1177 eller din vårdcentral om du är osäker."
+  }
+}
