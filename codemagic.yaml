@@ -63,7 +63,7 @@ workflows:
       app_store_connect: Codemagic Flytteklar   # exposes APP_STORE_CONNECT_ISSUER_ID / KEY_IDENTIFIER / PRIVATE_KEY
     environment:
       vars:
-        ASC_APP_ID: "TODO"            # <- change per app
+        ASC_APP_ID: "6828535950"            # <- change per app
         ASC_SYNC_ARGS: "--all"
       node: 22
     scripts:
