@@ -1,5 +1,5 @@
 /**
- * Domain registry. Fodmara = the generic symptom-diary engine (src/core/diary) configured for tinnitus
+ * Domain registry. Fodmara = the generic symptom-diary engine (src/core/diary) configured for IBS / low-FODMAP
  * (src/domain/fodmara). A sibling app (IBS, menopause) swaps only this folder.
  */
 import { diaryMigrations, configureDiary } from "@/core/diary";

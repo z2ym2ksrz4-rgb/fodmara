@@ -1,4 +1,4 @@
-# Fodmara – tinnitus diary (built on the Ilumie app template, copied from Migrano)
+# Fodmara – IBS & low-FODMAP diary (built on the diary engine, copied from Tinnara)
 
 Local-first mobile app skeleton: **React + TypeScript + Vite + Capacitor** (iOS and Android from one codebase).
 No backend. SQLite on device, encrypted backup file for household sharing, local notifications, five languages,
@@ -97,3 +97,10 @@ reporting bucket) and RevenueCat (overview metrics), mailed via Resend. Apps are
 - Red-flag info sheet (`redFlags.*`): when to see a doctor quickly. Keep it in every version.
 - Smoke: `RELEASE=0 NODE_ENV=development npx vite build --mode development && npx vite preview --port 4173 & node smoke.mjs`
 - Store material: `node scripts/screenshots.mjs && node scripts/store-frames.mjs && node scripts/paywall-shot.mjs`; site: `python3 scripts/site-gen.py ../fodmara-site`.
+
+## Fodmara specifics
+
+- Domain: `src/domain/fodmara` – migrations 20–24 (tags, customFood, meal/mealItem, stool, challenge), `data.ts` (meals, Bristol, reintroduction, meal→flare patterns), `foods.ts` **generated** from `scripts/i18n/foods.tsv` by `python3 scripts/gen-foods.py`.
+- Locales: `python3 scripts/i18n/build.py` (base + overrides + food names), then `node scripts/i18n/check-keys.mjs` and `node scripts/i18n/check-dynamic.mjs`.
+- Site: no own domain – `python3 scripts/site-gen.py` writes `../ilumie-site/fodmara/` (served at https://ilumie.com/fodmara/).
+- Store: `node scripts/screenshots.mjs && node scripts/store-frames.mjs && node scripts/paywall-shot.mjs`, then delete the raw `*-N-name.png` captures (only `store-*` and `paywall-review.png` are committed).

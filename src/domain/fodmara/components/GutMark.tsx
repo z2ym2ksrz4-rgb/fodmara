@@ -1,12 +1,13 @@
 /**
- * The mark from the app icon: a round belly with a tight swirl inside – the "something is churning" feeling.
- * Used on the "My gut is acting up" button, the widget preview and the site.
+ * The mark from the app icon: a belly in profile, swollen, with a small cramp zigzag inside.
+ * Used on the "My gut is acting up" button and the widget preview. `color` = outline, `core` = belly fill.
  */
-export function GutMark({ size = 48, color = "currentColor", core = "var(--accent)" }: { size?: number; color?: string; core?: string }) {
+export function GutMark({ size = 48, color = "currentColor", core = "var(--accent)", cramp = "#24453C" }: { size?: number; color?: string; core?: string; cramp?: string }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 100 100" aria-hidden="true" fill="none">
-      <circle cx="50" cy="50" r="38" stroke={color} strokeWidth="7" />
-      <path d="M50 50 m0 -4 a4 4 0 1 1 -4 4 a9 9 0 0 1 9 -9 a14 14 0 0 1 14 14 a19 19 0 0 1 -19 19" stroke={core} strokeWidth="7" strokeLinecap="round" />
+    <svg width={size} height={size} viewBox="250 60 600 900" aria-hidden="true" fill="none">
+      <path d="M352 332 C570 320 750 430 750 570 C750 720 600 796 380 790" fill={core} />
+      <path d="M320 90 C320 210 312 280 352 332 C570 320 750 430 750 570 C750 720 600 796 380 790 C352 820 342 860 342 900" stroke={color} strokeWidth="70" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M480 480 l50 60 l-50 60 l50 60" stroke={cramp} strokeWidth="48" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }

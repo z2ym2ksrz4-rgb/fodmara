@@ -1,53 +1,57 @@
 # Fodmara — App Store / Google Play listing (DE)
 
 ## App name (30)
-Fodmara – Tinnitus-Tagebuch
+Fodmara – Reizdarm-Tagebuch
 
 ## Subtitle / short description (30 / 80)
-iOS subtitle: Tinnitus App & HNO-Bericht
-Play short description: Tinnitus-Tagebuch: Lautstärke, Schübe, Auslöser, PDF-Bericht für die HNO-Praxis.
+iOS subtitle: FODMAP & Ernährungstagebuch
+Play short description: Reizdarm- und Low-FODMAP-Tagebuch: Mahlzeiten, Beschwerden, Bristol, Tests, PDF.
 
 ## Keywords (iOS, 100 chars)
-app,ohrgeräusche,ohrensausen,ohrpfeifen,hörsturz,hno,hyperakusis,lärm,schlaf,stress,kalender,pdf
+ibs,darm,blähbauch,stuhl,bristol,diät,symptome,reizdarmsyndrom,low,essen,bauch,verdauung
 
 ## Description
-Fodmara ist das Tinnitus-Tagebuch, das Sie wirklich führen – eine Zahl pro Tag, ein Tipp, wenn es lauter wird, und ein PDF, das Ihre HNO-Praxis in einer Minute liest.
+Fodmara ist das Reizdarm- und Low-FODMAP-Tagebuch, um das Ihre Ernährungsberatung bittet – Mahlzeiten, Beschwerden und Toilettengänge in Sekunden, ein Plan für die Wiedereinführung und ein PDF, das sich in einer Minute lesen lässt.
 
 EINE ZAHL PRO TAG
-Wie laut war es heute, 0–10? Dazu, wie sehr er Sie belastet hat, wie Sie geschlafen haben, Ihr Stress und wie laut der Tag war – fünf Sekunden am Abend. Über Wochen wird daraus eine Kurve, die Sie wirklich jemandem zeigen können.
+Wie ging es Ihrem Bauch heute, 0–10? Dazu Blähbauch, Schmerzen, Schlaf und Stress – fünf Sekunden am Abend. Über Wochen entsteht eine Kurve, die Sie wirklich jemandem zeigen können.
 
-EIN TIPP, WENN ES LAUTER WIRD
-„Jetzt lauter“ hält einen Schub sofort fest. Wie er klingt, welches Ohr, was ihn ausgelöst hat und was geholfen hat, kann warten, bis es sich beruhigt hat.
+MAHLZEITEN, TOILETTE UND BESCHWERDEN IN SEKUNDEN
+• Mahlzeiten: Ihre üblichen Lebensmittel zuerst, über 130 Lebensmittel durchsuchen oder eigene hinzufügen
+• Sehen Sie, welche FODMAP-Gruppen eine Mahlzeit typischerweise enthält (Fruktane, GOS, Laktose, Fruktose, Sorbit, Mannit)
+• Toilettengänge mit der Bristol-Stuhlformen-Skala, Stuhldrang und Blut
+• „Mein Bauch spinnt“ erfasst eine Beschwerdephase mit einem Tipp – Beschwerden, Ort, mögliche Auslöser und was geholfen hat, können warten
 
-SEHEN, WAS IHN LAUTER MACHT
-• Lautstärke über 90 Tage und Monat für Monat
-• Wie Schlaf, Stress und Lärm am Vortag mit lauteren Tagen zusammenhängen
-• Welche Geräusche, Auslöser und Begleitsymptome sich häufen – und was hilft
-• Kalender-Heatmap Ihres Monats
-• Optional Luftdruck für Ihren Ort (ohne Standortzugriff)
-• PDF-Bericht für jeden Zeitraum: Wochentabelle und eine Zeile pro Schub
+WIEDEREINFÜHRUNG, EINE GRUPPE NACH DER ANDEREN
+Verfolgen Sie Ihre Eliminationsphase und planen Sie dann jeden Test: drei Tage mit kleiner, mittlerer und großer Portion, drei Pausentage, Erinnerungen an die Portion des Tages. Fodmara zeigt Ihren Bauchwert an den Testtagen neben der Woche davor und sammelt die Ergebnisse – vertragen, etwas Beschwerden oder deutliche Reaktion.
 
-WANN SIE SCHNELL ZUM ARZT SOLLTEN
-Eine klare Seite zu den Situationen, in denen Tinnitus schnell ärztlich abgeklärt werden muss – etwa bei einem Hörsturz. Ein Tagebuch ist nie ein Grund zu warten.
+SEHEN, WAS VOR BESCHWERDEN KOMMT
+• Bauchwert über 90 Tage und Monat für Monat
+• Welche Lebensmittel und FODMAP-Gruppen vor Beschwerden gegessen wurden – im Vergleich zu anderen Mahlzeiten
+• Ihre Bristol-Typen, Beschwerden, Auslöser und was hilft
+• PDF-Bericht für Ernährungsberatung oder Arztpraxis
+
+WANN SIE ÄRZTLICHEN RAT BRAUCHEN
+Eine klare Seite zu Beschwerden, die nicht zum Reizdarm passen – etwa Blut im Stuhl oder Gewichtsverlust –, denn ein Tagebuch ist nie ein Grund zu warten.
 
 PRIVAT VON GRUND AUF
-Kein Konto. Keine Cloud. Keine Analytics. Alles bleibt auf Ihrem Telefon, auf Wunsch mit PIN geschützt, und Sie können jederzeit eine verschlüsselte Sicherung exportieren.
+Kein Konto. Keine Cloud. Kein Tracking. Alles bleibt auf Ihrem Telefon, auf Wunsch hinter einer PIN, mit einer verschlüsselten Sicherung, die Sie selbst steuern.
 
 KOSTENLOS UND PRO
-Tageseinträge, Schübe, Kalender und Widget sind kostenlos – für immer. Fodmara Pro ergänzt Ihre Kurve, Muster, den PDF-Bericht, PIN-Sperre, Sicherung und unbegrenzten Verlauf – jährlich mit 7 Tagen kostenlos testen oder einmalig für immer. Nie Werbung.
+Tägliche Einträge, Mahlzeiten, Toilettengänge, Beschwerdephasen, Kalender und Widget sind kostenlos – für immer. Fodmara Pro ergänzt den Wiedereinführungsplan, Muster, den PDF-Bericht, PIN-Sperre, Sicherung und unbegrenzten Verlauf – jährlich mit 7 Tagen kostenlosem Test oder als einmaliger Kauf. Niemals Werbung.
 
-Fodmara ist ein Tagebuch zur Selbstbeobachtung, kein Medizinprodukt. Es stellt keine Diagnosen und empfiehlt keine Behandlung. Besprechen Sie Ihre Einträge mit Ihrer Ärztin oder Ihrem Arzt.
+Fodmara ist ein Selbstbeobachtungs-Tagebuch, kein Medizinprodukt. Es stellt keine Diagnosen, nutzt keine offiziellen FODMAP-Messwerte und gibt keine Ernährungsempfehlungen. Besprechen Sie Ihre Einträge mit Ihrer Arztpraxis oder Ernährungsfachkraft.
 
-Entwickelt in Dänemark von Ilumie. Fragen? support@fodmara.app
+Entwickelt in Dänemark von Ilumie. Fragen? fodmara@ilumie.com
 
 Nutzungsbedingungen (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
-Datenschutzerklärung: https://fodmara.app/privacy
+Datenschutzerklärung: https://ilumie.com/fodmara/privacy/
 
 ## What's new (first release)
-Erste Version. Täglicher Lautstärke-Eintrag, Schub-Protokoll, Kalender, Lautstärke-Kurve und Muster, PDF-Bericht, PIN-Sperre – auf Deutsch, Englisch, Dänisch, Schwedisch und Norwegisch.
+Erste Version. Täglicher Bauchwert, Mahlzeiten mit FODMAP-Gruppen, Toilettengänge (Bristol), Beschwerdephasen, Wiedereinführungsplan, Muster und PDF-Bericht – auf Deutsch, Englisch, Dänisch, Schwedisch und Norwegisch.
 
 ## Promotional text (iOS, 170)
-Eine Zahl pro Tag, ein Tipp bei einem Schub. Sehen Sie, wie Schlaf, Stress und Lärm mit Ihrem Tinnitus zusammenhängen – privat, ohne Konto.
+Mahlzeiten, Beschwerden und Bristol in Sekunden. Planen Sie Ihre FODMAP-Wiedereinführung Gruppe für Gruppe – privat, ohne Konto.
 
 ## Categories
-Primär: Gesundheit und Fitness. Sekundär: Medizin.
+Primary: Health & Fitness. Secondary: Medical.

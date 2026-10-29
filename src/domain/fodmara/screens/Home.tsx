@@ -165,12 +165,12 @@ export function Home() {
 
       {open ? (
         <button type="button" className="louder live" onClick={() => ui.openEpisode(open.id, "live")}>
-          <span className="louder-mark"><GutMark size={34} color="#fff" core="#fff" /></span>
+          <span className="louder-mark"><GutMark size={34} color="#fff" core="rgba(255,255,255,.35)" cramp="#fff" /></span>
           <span className="col-text"><strong>{t("home.openSince", { time: fmtTime(open.startedAt, lang) })}</strong><span className="small">{t("home.tapToEdit")}</span></span>
         </button>
       ) : (
         <button type="button" className="louder" onClick={onFlare}>
-          <span className="louder-mark"><GutMark size={34} color="#fff" core="#FFE3C7" /></span>
+          <span className="louder-mark"><GutMark size={34} color="#fff" core="#24453C" cramp="#F6C2A9" /></span>
           <span className="col-text"><strong>{t("home.actingUp")}</strong><span className="small">{t("home.actingUpHint")}</span></span>
         </button>
       )}

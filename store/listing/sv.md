@@ -1,53 +1,57 @@
 # Fodmara — App Store / Google Play listing (SV)
 
 ## App name (30)
-Fodmara – Tinnitus Dagbok
+Fodmara – FODMAP & IBS-dagbok
 
 ## Subtitle / short description (30 / 80)
-iOS subtitle: Öronsus & rapport till läkaren
-Play short description: Tinnitusdagbok: daglig styrka, skov, triggers och PDF-rapport till läkaren.
+iOS subtitle: Matdagbok för magen
+Play short description: IBS- och låg-FODMAP-dagbok: måltider, besvär, Bristol, återintroduktion och PDF.
 
 ## Keywords (iOS, 100 chars)
-dagbok,öronsus,ringningar i öronen,pip i örat,hörsel,ljudkänslighet,buller,sömn,stress,app,pdf
+mage,uppblåsthet,tarm,avföring,bristol,dietist,kost,symtom,diet,låg,mat,matsmältning
 
 ## Description
-Fodmara är tinnitusdagboken du faktiskt fortsätter med – en siffra om dagen, ett tryck när den blossar upp, och en PDF som läkaren läser på en minut.
+Fodmara är IBS- och låg-FODMAP-dagboken som din dietist ber om – måltider, besvär och toalettbesök på några sekunder, en plan för återintroduktionen och en PDF som går att läsa på en minut.
 
 EN SIFFRA OM DAGEN
-Hur stark var den i dag, 0–10? Plus hur mycket den besvärade, hur du sov, din stress och hur bullrig dagen var – fem sekunder på kvällen. Över veckor blir det en kurva du faktiskt kan visa någon.
+Hur mådde magen i dag, 0–10? Lägg till uppblåsthet, smärta, sömn och stress – fem sekunder på kvällen. Över veckor blir det en kurva du faktiskt kan visa någon.
 
-ETT TRYCK NÄR DEN BLIR STARKARE
-"Starkare nu" loggar ett skov direkt. Hur den låter, vilket öra, vad som satte igång det och vad som hjälpte kan vänta tills det har lagt sig.
+MÅLTIDER, TOALETT OCH SKOV PÅ SEKUNDER
+• Måltider: dina vanliga livsmedel först, sök bland 130+ livsmedel eller lägg till egna
+• Se vilka FODMAP-grupper en måltid ofta innehåller (fruktaner, GOS, laktos, fruktos, sorbitol, mannitol)
+• Toalettbesök med Bristolskalan, brådska och blod
+• ”Magen bråkar nu” loggar ett skov med ett tryck – besvär, var det gör ont, möjliga utlösare och vad som hjälpte kan vänta
 
-SE VAD SOM GÖR DEN STARKARE
-• Styrkan över 90 dagar och månad för månad
-• Hur sömn, stress och buller dagen före hänger ihop med dina starkare dagar
-• Vilka ljud, triggers och symtom som återkommer – och vad som hjälper
-• Kalender-heatmap över din månad
-• Valfritt lufttryck för din ort (utan platsåtkomst)
-• PDF-rapport för valfri period: veckotabell och en rad per skov
+ÅTERINTRODUKTION, EN GRUPP I TAGET
+Följ din elimineringsfas och planera sedan varje test: tre dagar med liten, mellan och stor portion, tre pausdagar och påminnelser om dagens portion. Fodmara visar magens värde under testdagarna bredvid veckan innan och samlar resultaten – tålde, vissa besvär eller tydlig reaktion.
 
-NÄR DU SKA TILL LÄKARE
-En tydlig sida om situationerna där tinnitus behöver snabb vård – till exempel plötslig hörselnedsättning. En dagbok är aldrig ett skäl att vänta.
+SE VAD SOM KOMMER FÖRE ETT SKOV
+• Magens värde över 90 dagar och månad för månad
+• Vilka livsmedel och FODMAP-grupper du åt före skov – jämfört med andra måltider
+• Dina Bristoltyper, besvär, utlösare och vad som hjälper
+• PDF-rapport till din dietist eller läkare
+
+NÄR DU SKA SÖKA VÅRD
+En tydlig sida om besvär som inte passar in på IBS – till exempel blod i avföringen eller viktnedgång – för en dagbok är aldrig ett skäl att vänta.
 
 PRIVAT FRÅN GRUNDEN
-Inget konto. Inget moln. Ingen analys. Allt stannar i din telefon, om du vill bakom en PIN-kod, och du kan när som helst exportera en krypterad säkerhetskopia.
+Inget konto. Inget moln. Ingen spårning. Allt stannar i din telefon, gärna bakom en PIN-kod, med en krypterad säkerhetskopia som du själv styr.
 
 GRATIS OCH PRO
-Dagliga incheckningar, skov, kalender och widget är gratis – för alltid. Fodmara Pro ger din kurva, mönster, PDF-rapporten, PIN-lås, säkerhetskopia och obegränsad historik – årsvis med 7 dagars gratis provperiod eller ett livstidsköp. Aldrig reklam.
+Dagliga incheckningar, måltider, toalettbesök, skov, kalender och widget är gratis – för alltid. Fodmara Pro ger återintroduktionsplanen, mönster, PDF-rapporten, PIN-lås, säkerhetskopia och obegränsad historik – årsvis med 7 dagars kostnadsfri provperiod eller som ett engångsköp. Aldrig reklam.
 
-Fodmara är en dagbok för självobservation, inte en medicinteknisk produkt. Den ställer inga diagnoser och rekommenderar ingen behandling. Prata med din läkare om det du loggar.
+Fodmara är en dagbok för självobservation, inte en medicinteknisk produkt. Den ställer inga diagnoser, använder inga officiella FODMAP-mätningar och ger inga kostråd. Prata med din läkare eller dietist om det du loggar.
 
-Utvecklad i Danmark av Ilumie. Frågor? support@fodmara.app
+Skapad i Danmark av Ilumie. Frågor? fodmara@ilumie.com
 
 Användarvillkor (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
-Integritetspolicy: https://fodmara.app/privacy
+Integritetspolicy: https://ilumie.com/fodmara/privacy/
 
 ## What's new (first release)
-Första versionen. Daglig styrka-incheckning, skovlogg, kalender, styrkekurva och mönster, PDF-rapport, PIN-lås – på svenska, engelska, tyska, danska och norska.
+Första versionen. Daglig incheckning för magen, måltider med FODMAP-grupper, toalettbesök (Bristol), skov, återintroduktionsplan, mönster och PDF-rapport – på svenska, engelska, tyska, danska och norska.
 
 ## Promotional text (iOS, 170)
-En siffra om dagen, ett tryck när den blossar upp. Se hur sömn, stress och buller hänger ihop med din tinnitus – privat, utan konto.
+Måltider, besvär och Bristol på några sekunder. Planera din FODMAP-återintroduktion en grupp i taget – privat, utan konto.
 
 ## Categories
-Primär: Hälsa och fitness. Sekundär: Medicin.
+Primary: Health & Fitness. Secondary: Medical.

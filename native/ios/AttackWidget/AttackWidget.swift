@@ -2,7 +2,7 @@ import WidgetKit
 import SwiftUI
 
 // Reads the JSON snapshot the app writes to the App Group (see plugins/widget-bridge). All strings arrive pre-localised.
-// Tapping any family opens the app through the deep link: fodmara://episode/new starts a spike immediately.
+// Tapping any family opens the app through the deep link: fodmara://episode/new starts a flare-up immediately.
 struct Data: Decodable { let cta: String; let open: Bool; let line1: String; let line2: String; let url: String; let updatedAt: String }
 struct Entry: TimelineEntry { let date: Date; let data: Data? }
 
@@ -12,7 +12,7 @@ struct Provider: TimelineProvider {
         guard let s = UserDefaults(suiteName: Provider.group)?.string(forKey: "widgetData"), let d = s.data(using: .utf8) else { return nil }
         return try? JSONDecoder().decode(Data.self, from: d)
     }
-    func placeholder(in context: Context) -> Entry { Entry(date: Date(), data: Data(cta: "Louder now", open: false, line1: "Today: 3/10", line2: "7-day avg. 3.4 · 2 spikes", url: "fodmara://episode/new", updatedAt: "")) }
+    func placeholder(in context: Context) -> Entry { Entry(date: Date(), data: Data(cta: "Gut acting up", open: false, line1: "Today: 3/10", line2: "7-day avg. 3.4 · 2 flare-ups", url: "fodmara://episode/new", updatedAt: "")) }
     func getSnapshot(in context: Context, completion: @escaping (Entry) -> Void) { completion(Entry(date: Date(), data: load() ?? placeholder(in: context).data)) }
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> Void) {
         let next = Calendar.current.date(byAdding: .hour, value: 6, to: Date())!
@@ -20,33 +20,60 @@ struct Provider: TimelineProvider {
     }
 }
 
-let amber = Color(red: 0.97, green: 0.74, blue: 0.33)
-let amberDark = Color(red: 0.85, green: 0.48, blue: 0.16)
-let ink = Color(red: 0.18, green: 0.23, blue: 0.33)
+let apricot = Color(red: 0.95, green: 0.64, blue: 0.49)
+let apricotDark = Color(red: 0.84, green: 0.37, blue: 0.23)
+let ink = Color(red: 0.14, green: 0.27, blue: 0.24)
+let cream = Color(red: 0.96, green: 0.95, blue: 0.91)
 
-/// Tone mark: a dot (the ear canal) and a high-pitched wave growing out of it – same as the app icon.
-struct Waves: View {
-    var size: CGFloat
-    var color: Color = .white
-    var body: some View {
-        ZStack(alignment: .leading) {
-            Tone().stroke(color, style: StrokeStyle(lineWidth: size * 0.065, lineCap: .round, lineJoin: .round))
-            Circle().fill(color).frame(width: size * 0.18, height: size * 0.18).offset(x: size * 0.07)
-        }.frame(width: size, height: size)
+/// Belly mark: a belly in profile with a small cramp zigzag inside – same as the app icon (viewBox 250 60 600 900).
+struct BellyOutline: Shape {
+    func path(in r: CGRect) -> Path {
+        let sx = r.width / 600, sy = r.height / 900, s = min(sx, sy)
+        let ox = r.minX + (r.width - 600 * s) / 2 - 250 * s, oy = r.minY + (r.height - 900 * s) / 2 - 60 * s
+        func pt(_ x: CGFloat, _ y: CGFloat) -> CGPoint { CGPoint(x: ox + x * s, y: oy + y * s) }
+        var p = Path()
+        p.move(to: pt(320, 90))
+        p.addCurve(to: pt(352, 332), control1: pt(320, 210), control2: pt(312, 280))
+        p.addCurve(to: pt(750, 570), control1: pt(570, 320), control2: pt(750, 430))
+        p.addCurve(to: pt(380, 790), control1: pt(750, 720), control2: pt(600, 796))
+        p.addCurve(to: pt(342, 900), control1: pt(352, 820), control2: pt(342, 860))
+        return p
     }
 }
-
-struct Tone: Shape {
+struct BellyFill: Shape {
     func path(in r: CGRect) -> Path {
+        let s = min(r.width / 600, r.height / 900)
+        let ox = r.minX + (r.width - 600 * s) / 2 - 250 * s, oy = r.minY + (r.height - 900 * s) / 2 - 60 * s
+        func pt(_ x: CGFloat, _ y: CGFloat) -> CGPoint { CGPoint(x: ox + x * s, y: oy + y * s) }
         var p = Path()
-        for i in 0...60 {
-            let t = CGFloat(i)
-            let x = r.minX + r.width * (0.22 + t * 0.0125)
-            let amp = r.height * (0.02 + t * 0.0032)
-            let y = r.midY + amp * CGFloat(sin(Double(t) / 2.2))
-            if i == 0 { p.move(to: CGPoint(x: x, y: y)) } else { p.addLine(to: CGPoint(x: x, y: y)) }
-        }
+        p.move(to: pt(352, 332))
+        p.addCurve(to: pt(750, 570), control1: pt(570, 320), control2: pt(750, 430))
+        p.addCurve(to: pt(380, 790), control1: pt(750, 720), control2: pt(600, 796))
+        p.closeSubpath()
         return p
+    }
+}
+struct Cramp: Shape {
+    func path(in r: CGRect) -> Path {
+        let s = min(r.width / 600, r.height / 900)
+        let ox = r.minX + (r.width - 600 * s) / 2 - 250 * s, oy = r.minY + (r.height - 900 * s) / 2 - 60 * s
+        func pt(_ x: CGFloat, _ y: CGFloat) -> CGPoint { CGPoint(x: ox + x * s, y: oy + y * s) }
+        var p = Path()
+        p.move(to: pt(480, 480)); p.addLine(to: pt(530, 540)); p.addLine(to: pt(480, 600)); p.addLine(to: pt(530, 660))
+        return p
+    }
+}
+struct Belly: View {
+    var size: CGFloat
+    var line: Color = cream
+    var fill: Color = apricot
+    var cramp: Color = ink
+    var body: some View {
+        ZStack {
+            BellyFill().fill(fill)
+            BellyOutline().stroke(line, style: StrokeStyle(lineWidth: size * 0.075, lineCap: .round, lineJoin: .round))
+            Cramp().stroke(cramp, style: StrokeStyle(lineWidth: size * 0.052, lineCap: .round, lineJoin: .round))
+        }.frame(width: size, height: size)
     }
 }
 
@@ -54,10 +81,10 @@ struct SmallView: View {
     let data: Data?
     var body: some View {
         ZStack {
-            ContainerRelativeShape().fill(LinearGradient(colors: data?.open == true ? [ink, ink] : [amber, amberDark], startPoint: .topLeading, endPoint: .bottomTrailing))
+            ContainerRelativeShape().fill(LinearGradient(colors: data?.open == true ? [apricot, apricotDark] : [ink, ink], startPoint: .topLeading, endPoint: .bottomTrailing))
             VStack(spacing: 8) {
-                Waves(size: 54)
-                Text(data?.cta ?? "Louder now").font(.system(.headline, design: .serif)).foregroundColor(.white).multilineTextAlignment(.center).lineLimit(2)
+                Belly(size: 54)
+                Text(data?.cta ?? "Gut acting up").font(.system(.headline, design: .serif)).foregroundColor(.white).multilineTextAlignment(.center).lineLimit(2)
             }.padding(12)
         }
     }
@@ -68,8 +95,8 @@ struct MediumView: View {
     var body: some View {
         HStack(spacing: 14) {
             ZStack {
-                RoundedRectangle(cornerRadius: 22).fill(LinearGradient(colors: data?.open == true ? [ink, ink] : [amber, amberDark], startPoint: .topLeading, endPoint: .bottomTrailing))
-                VStack(spacing: 6) { Waves(size: 44); Text(data?.cta ?? "Louder now").font(.system(.subheadline, design: .serif).weight(.medium)).foregroundColor(.white).multilineTextAlignment(.center).lineLimit(2) }.padding(8)
+                RoundedRectangle(cornerRadius: 22).fill(LinearGradient(colors: data?.open == true ? [apricot, apricotDark] : [ink, ink], startPoint: .topLeading, endPoint: .bottomTrailing))
+                VStack(spacing: 6) { Belly(size: 44); Text(data?.cta ?? "Gut acting up").font(.system(.subheadline, design: .serif).weight(.medium)).foregroundColor(.white).multilineTextAlignment(.center).lineLimit(2) }.padding(8)
             }.frame(width: 120)
             VStack(alignment: .leading, spacing: 6) {
                 Text("Fodmara").font(.system(.headline, design: .serif))
@@ -86,9 +113,9 @@ struct LockRectView: View {
     let data: Data?
     var body: some View {
         HStack(spacing: 8) {
-            Waves(size: 28, color: .primary)
+            Belly(size: 28, line: .primary, fill: .clear, cramp: .primary)
             VStack(alignment: .leading, spacing: 1) {
-                Text(data?.cta ?? "Louder now").font(.headline).lineLimit(1)
+                Text(data?.cta ?? "Gut acting up").font(.headline).lineLimit(1)
                 Text(data?.line1 ?? "").font(.caption2).foregroundColor(.secondary).lineLimit(1)
             }
         }
@@ -96,7 +123,7 @@ struct LockRectView: View {
 }
 
 struct LockCircleView: View {
-    var body: some View { ZStack { AccessoryWidgetBackground(); Waves(size: 30, color: .primary) } }
+    var body: some View { ZStack { AccessoryWidgetBackground(); Belly(size: 30, line: .primary, fill: .clear, cramp: .primary) } }
 }
 
 struct AttackEntryView: View {
@@ -120,7 +147,7 @@ struct AttackWidget: Widget {
             if #available(iOS 17.0, *) { view.containerBackground(.background, for: .widget) } else { view }
         }
         .configurationDisplayName("Fodmara")
-        .description("Log a tinnitus spike with one tap.")
+        .description("Log a gut flare-up with one tap.")
         .supportedFamilies([.systemSmall, .systemMedium, .accessoryRectangular, .accessoryCircular])
         .contentMarginsDisabled()
     }

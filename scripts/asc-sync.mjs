@@ -119,11 +119,11 @@ async function syncScreenshots(locId, lang) {
 
 // ---- IAP / subscriptions
 const SUB_LOC = {
-  "en-US": { name: "Fodmara Pro – Yearly", description: "Loudness curve, patterns, PDF report, PIN, backup", group: "Fodmara Pro", lifetimeName: "Fodmara Pro – Lifetime", lifetimeDesc: "All Pro features forever. Pay once, no subscription" },
-  da: { name: "Fodmara Pro – Årligt", description: "Kurve, mønstre, PDF-rapport, PIN, backup", group: "Fodmara Pro", lifetimeName: "Fodmara Pro – Livstid", lifetimeDesc: "Alle Pro-funktioner for altid. Betal én gang" },
-  "de-DE": { name: "Fodmara Pro – Jährlich", description: "Kurve, Muster, PDF-Bericht, PIN, Sicherung", group: "Fodmara Pro", lifetimeName: "Fodmara Pro – Lebenslang", lifetimeDesc: "Alle Pro-Funktionen für immer. Einmal zahlen" },
-  sv: { name: "Fodmara Pro – Årsvis", description: "Kurva, mönster, PDF-rapport, PIN, säkerhetskopia", group: "Fodmara Pro", lifetimeName: "Fodmara Pro – Livstid", lifetimeDesc: "Alla Pro-funktioner för alltid. Betala en gång" },
-  no: { name: "Fodmara Pro – Årlig", description: "Kurve, mønstre, PDF-rapport, PIN, sikkerhetskopi", group: "Fodmara Pro", lifetimeName: "Fodmara Pro – Livstid", lifetimeDesc: "Alle Pro-funksjoner for alltid. Betal én gang" },
+  "en-US": { name: "Fodmara Pro – Yearly", description: "Reintroduction planner, patterns, PDF report, PIN", group: "Fodmara Pro", lifetimeName: "Fodmara Pro – Lifetime", lifetimeDesc: "All Pro features forever. Pay once, no subscription" },
+  da: { name: "Fodmara Pro – Årligt", description: "Genintroduktionsplan, mønstre, PDF-rapport, PIN", group: "Fodmara Pro", lifetimeName: "Fodmara Pro – Livstid", lifetimeDesc: "Alle Pro-funktioner for altid. Betal én gang" },
+  "de-DE": { name: "Fodmara Pro – Jährlich", description: "Wiedereinführungsplan, Muster, PDF-Bericht, PIN", group: "Fodmara Pro", lifetimeName: "Fodmara Pro – Lebenslang", lifetimeDesc: "Alle Pro-Funktionen für immer. Einmal zahlen" },
+  sv: { name: "Fodmara Pro – Årsvis", description: "Återintroduktionsplan, mönster, PDF-rapport, PIN", group: "Fodmara Pro", lifetimeName: "Fodmara Pro – Livstid", lifetimeDesc: "Alla Pro-funktioner för alltid. Betala en gång" },
+  no: { name: "Fodmara Pro – Årlig", description: "Reintroduksjonsplan, mønstre, PDF-rapport, PIN", group: "Fodmara Pro", lifetimeName: "Fodmara Pro – Livstid", lifetimeDesc: "Alle Pro-funksjoner for alltid. Betal én gang" },
 };
 // Localizations of purchases that are already in review are locked by Apple (409 UNMODIFIABLE) — that is expected, not a failure.
 const tryIap = async (label, fn) => { try { await fn(); } catch (e) { if (/UNMODIFIABLE/.test(e.message)) { console.log("locked (in review), skipped:", label); return; } console.error("FAILED", label, "→", e.message); iapFailures.push(label); } };

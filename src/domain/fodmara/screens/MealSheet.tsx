@@ -75,7 +75,8 @@ export function MealSheet() {
     else { await settings.set("successEvents", settings.successEvents + 1); void maybeAskForReview(); }
     bump(); openMeal(null);
   };
-  const Chip = ({ p }: { p: Pick }) => <button type="button" className={`chip ${selected.has(pickId(p)) ? "on" : ""}`} onClick={() => toggle(p)}>{label(p)}</button>;
+  // a plain render function, not a component: an inline component type would remount every chip on each render
+  const chip = (p: Pick) => <button type="button" key={pickId(p)} className={`chip ${selected.has(pickId(p)) ? "on" : ""}`} onClick={() => toggle(p)}>{label(p)}</button>;
 
   return (
     <Sheet open onClose={() => void close()} title={t("meal.title")} tall>
@@ -96,16 +97,16 @@ export function MealSheet() {
       <input type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder={t("meal.searchPh")} aria-label={t("meal.searchPh")} />
       {query.trim() ? (
         <div className="chips" style={{ marginTop: 8 }}>
-          {results.map((p) => <Chip key={pickId(p)} p={p} />)}
+          {results.map((p) => chip(p))}
           <button type="button" className="chip other" onClick={() => void addOwn()}>+ {t("meal.addOwn", { name: query.trim() })}</button>
         </div>
       ) : (
         <>
-          {usual.length > 0 && <div className="field"><span>{t("meal.usual")}</span><div className="chips">{usual.map((p) => <Chip key={pickId(p)} p={p} />)}</div></div>}
+          {usual.length > 0 && <div className="field"><span>{t("meal.usual")}</span><div className="chips">{usual.map((p) => chip(p))}</div></div>}
           <div className="field"><span>{t("meal.browse")}</span>
             <div className="chips">{CATS.map((c) => <button type="button" key={c} className={`chip ${cat === c ? "on" : ""}`} onClick={() => setCat(cat === c ? null : c)}>{t(`food.cat.${c}`)}</button>)}</div>
           </div>
-          {cat && <div className="chips">{results.map((p) => <Chip key={pickId(p)} p={p} />)}</div>}
+          {cat && <div className="chips">{results.map((p) => chip(p))}</div>}
         </>
       )}
 

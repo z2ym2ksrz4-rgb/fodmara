@@ -110,7 +110,7 @@ button.card { color:var(--fg); font-weight:500; text-align:left; }
 .cmp div { display:flex; flex-direction:column; gap:2px; }
 .moh { display:grid; grid-template-columns:repeat(3, 1fr); gap:8px; margin:8px 0; }
 .widget-preview { display:flex; gap:14px; align-items:center; background:var(--bg2); border-radius:var(--r); padding:14px; margin:4px 0 12px; }
-.wp-tile { width:92px; height:92px; border-radius:22px; background:linear-gradient(135deg, #F0956C, #D9643F); color:#FFF6F0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; font-family:var(--display); font-size:.85rem; flex-shrink:0; box-shadow:var(--shadow); }
+.wp-tile { width:92px; height:92px; border-radius:22px; background:#24453C; color:#F6F1E8; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; font-family:var(--display); font-size:.85rem; flex-shrink:0; box-shadow:var(--shadow); }
 .wp-text { display:flex; flex-direction:column; gap:2px; }
 .steps { padding-left:20px; margin:8px 0; }
 .steps li { margin:8px 0; line-height:1.45; }

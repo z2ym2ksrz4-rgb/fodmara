@@ -1,53 +1,57 @@
 # Fodmara — App Store / Google Play listing (EN)
 
 ## App name (30)
-Fodmara – Tinnitus Tracker
+Fodmara – FODMAP & IBS Diary
 
 ## Subtitle / short description (30 / 80)
-iOS subtitle: Tinnitus diary & ENT report
-Play short description: Tinnitus diary: daily loudness, spikes, triggers and a PDF for your doctor.
+iOS subtitle: Food symptom diary for IBS
+Play short description: IBS & low-FODMAP diary: meals, symptoms, Bristol, reintroduction tests, PDF.
 
 ## Keywords (iOS, 100 chars)
-diary,ringing ears,ear ringing,hearing,log,hyperacusis,ent,noise,sleep,journal,loudness,pdf
+tracker,low,food,symptom,gut,bloating,bristol,stool,poop,elimination,reintroduction,dietitian,log
 
 ## Description
-Fodmara is the tinnitus diary you'll actually keep – one number a day, one tap when it spikes, and a PDF your doctor or ENT can read in a minute.
+Fodmara is the IBS and low-FODMAP diary your dietitian asks for – meals, symptoms and toilet visits in seconds, a planner for the reintroduction phase, and a PDF they can read in a minute.
 
 ONE NUMBER A DAY
-How loud was it today, 0–10? Add how much it bothered you, how you slept, your stress and how noisy the day was – five seconds in the evening. Over weeks, those numbers become a curve you can actually show someone.
+How was your gut today, 0–10? Add bloating, pain, sleep and stress – five seconds in the evening. Over weeks it becomes a curve you can actually show someone.
 
-ONE TAP WHEN IT GETS LOUDER
-"Louder now" logs a spike right away. How it sounds, which ear, what set it off and what helped can wait until it has settled.
+MEALS, TOILET AND FLARE-UPS IN SECONDS
+• Meals: your usual foods first, search 130+ foods, or add your own
+• See which FODMAP groups a meal typically contains (fructans, GOS, lactose, fructose, sorbitol, mannitol)
+• Toilet visits with the Bristol stool scale, urgency and blood
+• "My gut is acting up" logs a flare-up with one tap – symptoms, where it hurts, possible triggers and what helped can wait
 
-SEE WHAT MAKES IT LOUDER
-• Loudness over 90 days and month by month
-• How sleep, stress and noise the day before line up with your louder days
-• Which sounds, triggers and symptoms come up most – and what helps
-• Calendar heatmap of your month
-• Optional air pressure for your town (no location access)
-• PDF report for any period: week-by-week table and one row per spike
+REINTRODUCTION, ONE GROUP AT A TIME
+Track your elimination phase, then plan each test: three days with a small, medium and large portion, three pause days, reminders for the day's portion. Fodmara shows your gut score on the test days next to the week before and keeps a results overview – tolerated, some symptoms or a clear reaction.
+
+SEE WHAT COMES BEFORE A FLARE-UP
+• Gut score over 90 days and month by month
+• Which foods and FODMAP groups were eaten before flare-ups – compared with other meals
+• Your Bristol types, symptoms, triggers and what helps
+• PDF report for your dietitian or doctor
 
 WHEN TO SEE A DOCTOR
-A clear page on the situations where tinnitus needs a doctor fast – like sudden hearing loss – because a diary is never a reason to wait.
+A clear page on the symptoms that are not typical of IBS – like blood in the stool or weight loss – because a diary is never a reason to wait.
 
 PRIVATE BY DESIGN
-No account. No cloud. No analytics. Everything stays on your phone, optionally behind a PIN, and you can export an encrypted backup any time.
+No account. No cloud. No analytics. Everything stays on your phone, optionally behind a PIN, with an encrypted backup you control.
 
 FREE AND PRO
-Daily check-ins, spikes, the calendar and the widget are free, forever. Fodmara Pro adds your curve, patterns, the PDF report, PIN lock, backup and unlimited history – yearly with a 7-day free trial, or one lifetime purchase. No ads, ever.
+Daily check-ins, meals, toilet visits, flare-ups, the calendar and the widget are free, forever. Fodmara Pro adds the reintroduction planner, patterns, the PDF report, PIN lock, backup and unlimited history – yearly with a 7-day free trial, or one lifetime purchase. No ads, ever.
 
-Fodmara is a self-observation diary, not a medical device. It does not diagnose and does not recommend treatment. Talk to your doctor about what you log.
+Fodmara is a self-observation diary, not a medical device. It does not diagnose, does not use official FODMAP measurements and gives no diet advice. Talk to your doctor or dietitian about what you log.
 
-Made in Denmark by Ilumie. Questions? support@fodmara.app
+Made in Denmark by Ilumie. Questions? fodmara@ilumie.com
 
 Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
-Privacy Policy: https://fodmara.app/privacy
+Privacy Policy: https://ilumie.com/fodmara/privacy/
 
 ## What's new (first release)
-First release. Daily loudness check-in, spike log, calendar, loudness curve and patterns, PDF report, PIN lock – in English, German, Danish, Swedish and Norwegian.
+First release. Gut check-in, meals with FODMAP groups, toilet visits (Bristol), flare-ups, reintroduction planner, patterns, PDF report – in English, German, Danish, Swedish and Norwegian.
 
 ## Promotional text (iOS, 170)
-One number a day, one tap when it spikes. See how sleep, stress and noise line up with your tinnitus – private, no account.
+Meals, symptoms and Bristol in seconds. Plan your FODMAP reintroduction one group at a time – private, no account.
 
 ## Categories
 Primary: Health & Fitness. Secondary: Medical.

@@ -6,7 +6,7 @@ export function WidgetPreview() {
   const { t } = useTranslation();
   return (
     <div className="widget-preview">
-      <div className="wp-tile"><GutMark size={40} color="#FFFFFF" core="#FFE3C7" /><span>{t("widget.actingUp")}</span></div>
+      <div className="wp-tile"><GutMark size={40} color="#F6F1E8" core="#F0956C" cramp="#24453C" /><span>{t("widget.actingUp")}</span></div>
       <div className="wp-text"><strong>{t("widget.previewLine1")}</strong><span className="muted small">{t("widget.previewLine2")}</span></div>
     </div>
   );
